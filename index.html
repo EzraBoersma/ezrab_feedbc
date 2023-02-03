@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIU: Project Brain Food</title>
+  <includes>
+  </includes>
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <script>
+
+    fetch("./includes/header.html")
+      .then(response => {
+        return response.text()
+      })
+      .then(data => {
+        document.querySelector("header").innerHTML = data;
+      });
+
+    fetch("./includes/footer.html")
+      .then(response => {
+        return response.text()
+      })
+      .then(data => {
+        document.querySelector("footer").innerHTML = data;
+      });
+
+    fetch("./includes/includes.html")
+      .then(response => {
+        return response.text()
+      })
+      .then(data => {
+        document.querySelector("includes").innerHTML = data;
+      });
+
+  </script>
+
+</head>
+
+
+<body>
+  <div class="container" id="mainpanel">
+    <div class="container" align="center">
+      <div class="row gy-5">
+        <div class="col-lg-12">
+          <header>
+
+          </header>
+
+        </div>
+      </div>
+      <div class="row gy-5 gx-5 pb-5 pt-5">
+        <h3>Explore Food Service Options</h3>
+        <div class="col-lg-3">
+          <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">Green Mountain</button>
+        </div>
+        <div class="col-lg-3">
+          <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">The Roost</button>
+        </div>
+        <div class="col-lg-3">
+          <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">Arrowsmith Grill</button>
+        </div>
+        <div class="col-lg-3">
+          <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">Mount Benson Market</button>
+        </div>
+
+      </div>
+
+      <div class="row pt-5">
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-primary btn-lg btn-lg2">
+            ORDER
+          </button>
+        </div>
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-primary btn-lg btn-lg2">
+            MAP
+          </button>
+        </div>
+      </div>
+
+
+
+    </div>
+    <footer>
+
+    </footer>
+
+
+  </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
