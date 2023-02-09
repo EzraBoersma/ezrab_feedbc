@@ -12065,6 +12065,10 @@ th {
 }
 
 #map {
-  height: 32rem;
-  width: 96rem;
+  height: 48rem;
+  width: 100%;
+}
+
+.supplier-item {
+  font-size: 1rem;
 }

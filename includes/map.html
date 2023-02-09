@@ -7,33 +7,170 @@
     </div>
 </div>
 <div class="row gy-5 gx-5 pb-5 pt-5">
+    <div class="col-lg-9">
 
 
-    <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Cras justo odio
-            <span class="badge bg-primary rounded-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Dapibus ac facilisis in
-            <span class="badge bg-primary rounded-pill">2</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Morbi leo risus
-            <span class="badge bg-primary rounded-pill">1</span>
-        </li>
-    </ul>
 
-    <div id="map"></div>
+
+        <div id="map"></div>
+    </div>
     <script>
-        var map;
+
+        /* These values are the coordinate boundaries that this map's viewport will be locked to. */
+        /*         const BRITISH_COLUMBIA_BOUNDS = {
+                    north: 60.5,
+                    south: 47.6,
+                    west: -134.00588285897737,
+                    east: -114.00240135711853,
+                }; */
+
+        /* const VIU = { lat: 49.15730703858696, lng: -123.96634614426951 }; */
+
         function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 49.1573024, lng: -123.9664322 },
-                zoom: 8,
-            });
+
+            var pointVIU = new google.maps.LatLng(49.15730703858696, -123.96634614426951),
+                pointFredrichs = new google.maps.LatLng(49.071574289007046, -123.83757095735695), //fredrichs
+                pointSaltspring = new google.maps.LatLng(49.189482143334224, -123.07412909739087), //saltspring coffee
+                pointFreshstart = new google.maps.LatLng(49.13307214755057, -123.08961931500245), //fresh stasrt repack
+                pointIslandcity = new google.maps.LatLng(49.19866316549283, -123.08087173639568), //island city baking
+                pointCastlecheese = new google.maps.LatLng(50.24505369459158, -118.96621843888752), //Castle Cheese Inc
+                liFredrichs = document.getElementById('liFredrichs'),
+                boundary_coords = { /* These values are the coordinate boundaries that this map's viewport will be locked to. */
+                    north: 60.5,
+                    south: 47.6,
+                    west: -134.00588285897737,
+                    east: -114.00240135711853,
+                },
+                myOptions = {
+                    zoom: 9,
+                    center: pointVIU,
+                    restriction: {
+                        latLngBounds: boundary_coords,
+                        strictBounds: false,
+                    },
+                },
+                map = new google.maps.Map(document.getElementById('map'), myOptions),
+
+                directionsService = new google.maps.DirectionsService(),
+                directionsDisplay = new google.maps.DirectionsRenderer({
+                    map: map,
+                });
+
+
+
+            //declare under map
+            const contentString =
+                '<div id="content">' +
+                '<div id="siteNotice">' +
+                "</div>" +
+                '<h1 id="firstHeading" class="firstHeading">Fredrich\'s Honey</h1>' +
+                '<h6 id="addrHeading" class="addrHeading">2798 Cedar Road, Nanaimo, BC</h6>' +
+                '<img src="../images/fredrichs.jpg" class="h-50 w-50 rounded mx-auto d-block" alt="beekeepers in field with hives and forklift"></img>' +
+                '<div id="bodyContent">' +
+                "<p>Located in the picturesque Cedar, British Columbia, just 20 minutes south of Nanaimo, " +
+                "the Fredrich's Honey farm has been in operation since 1966, passed down through the generations. " +
+                "We believe that the key to producing the finest honey lies in the care and maintenance of our hives. " +
+                "That's why we use only the most natural and sustainable methods in our beekeeping operations. " +
+                "From the materials we use to construct our hives, to the methods we employ to care for our bees, " +
+                "every aspect of our operation is designed to promote the health and well-being of our bees.</p>" +
+                "</div>" +
+                "</div>",
+
+                infowindow = new google.maps.InfoWindow({   //this is the info window for the currently selected marker
+                    content: contentString,
+                    ariaLabel: "Fredrich's Honey",
+                }),
+
+
+                markerVIU = new google.maps.Marker({
+                    position: pointVIU,
+                    title: "point VIU",
+                    label: " ",
+                    map: map,
+                }),
+                markerFredrichs = new google.maps.Marker({ //link
+                    position: pointFredrichs,
+                    title: "point Fredrichs",
+                    label: "1",
+                    map: map,
+                }),
+                markerSaltspring = new google.maps.Marker({ //link
+                    position: pointSaltspring,
+                    title: "point Saltspring",
+                    label: "2",
+                    map: map,
+                }),
+                markerFreshstart = new google.maps.Marker({ //https://www.freshstartfoods.com/pages/locations/wholesale-produce-distributors-british-columbia
+                    position: pointFreshstart,
+                    title: "point FreshStart",
+                    label: "3",
+                    map: map,
+                }),
+                markerIslandcity = new google.maps.Marker({ //link
+                    position: pointIslandcity,
+                    title: "point Islandcity",
+                    label: "4",
+                    map: map,
+                }),
+                markerCastlecheese = new google.maps.Marker({ //link
+                    position: pointCastlecheese,
+                    title: "point Castlecheese",
+                    label: "5",
+                    map: map,
+                });
+
+            markerFredrichs.addListener("click", () => {
+                infowindow.open({
+                    anchor: markerFredrichs,
+                    map,
+                });
+
+
+            }),
+
+                liFredrichs.onclick = function () {
+                    infowindow.open({
+                        anchor: markerFredrichs,
+                        map,
+                    })
+                };
+
+
+            // get route from A to B
+            calculateAndDisplayRoute(
+                directionsService,
+                directionsDisplay,
+                pointVIU,
+                pointFredrichs
+            );
+
+        }
+
+        function calculateAndDisplayRoute(
+            directionsService,
+            directionsDisplay,
+            pointVIU,
+            pointB
+        ) {
+            directionsService.route(
+                {
+                    origin: pointVIU,
+                    destination: pointB, // this will need to be the value that changes!!
+                    avoidTolls: false,
+                    avoidHighways: false,
+                    travelMode: google.maps.TravelMode.DRIVING,
+                },
+                function (response, status) {
+                    if (status == google.maps.DirectionsStatus.OK) {
+                        directionsDisplay.setDirections(response);
+                    } else {
+                        window.alert("Directions request failed due to " + status);
+                    }
+                }
+            );
         }
         initMap();
+
     </script>
     <!-- Remember to change YOUR_API_KEY below! -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh7Yk_WZh5s3nWzWjjJsLcbBDfqdrlens&callback=initMap"
@@ -46,6 +183,60 @@
               -->
 
 
+    <div class="col-lg-3">
+        <ul class="list-group">
+
+            <li id="liFredrichs"
+                class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">Frederich's Honey Farm</button>
+                <span class="badge bg-primary rounded-pill">1</span>
+            </li>
+            <li id="liSaltspring"
+                class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">Saltspring Coffee</button>
+                <span class="badge bg-primary rounded-pill">2</span>
+            </li>
+            <li id="liFreshstart"
+                class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action"> Fresh Start Foods </button>
+                <span class="badge bg-primary rounded-pill">3</span>
+            </li>
+            <li id="liIslandcity"
+                class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">Island City Baking Co.</button>
+                <span class="badge bg-primary rounded-pill">4</span>
+            </li>
+            <li id="liCastlecheese"
+                class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">Castle Cheese Inc</button>
+                <span class="badge bg-primary rounded-pill">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">BC Fresh Vegetables</button>
+                <span class="badge bg-primary rounded-pill">6</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">Gordon Food Service</button>
+                <span class="badge bg-primary rounded-pill">7</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">Hallmark Poultry</button>
+                <span class="badge bg-primary rounded-pill">8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">Highline Mushrooms</button>
+                <!--49.06414864095451, -122.59321906436732 https://www.highlinemushrooms.com/ -->
+                <span class="badge bg-primary rounded-pill">9</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center supplier-item">
+                <button type="button" class="list-group-item list-group-item-action">Golden Valley Foods</button>
+                <span class="badge bg-primary rounded-pill">10</span>
+            </li>
+
+        </ul>
+
+
+    </div>
 </div>
 
 

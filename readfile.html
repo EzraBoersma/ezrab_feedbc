@@ -19,7 +19,7 @@
                 <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
             </div>
             <br />
-            <div id="employee_table">
+            <div id="menu_table">
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@
                         table_data += '</tr>'; //after each loop iteration, close the row
                     }
                     table_data += '</table>';   //after data is processed, close the table
-                    $('#employee_table').html(table_data);  //select the table element by ID on the page and write all of this text to the page asynchronously
+                    $('#menu_table').html(table_data);  //select the table element by ID on the page and write all of this text to the page asynchronously
                 }
             });
         });
