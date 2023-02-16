@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> BASE FILE DO NOT TOUCH - CSV File to HTML Table Using AJAX jQuery</title>
+    <!-- All local includes -->
+    <script src="./scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <script src="./scripts/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <h1 align="center">Outlet Name Goes Here</h1>
+            <br />
+            <div align="center">
+                <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
+            </div>
+            <br />
+            <div id="menu_table">
+            </div>
+        </div>
+    </div>
+
+    <includes>
+
+    </includes>
+
+
+</body>
+
+</html>
+
+<script>
+
+
+
+
+    $(document).ready(function () {
+        $('#load_data').click(function () {
+            $.ajax({
+
+                //This is a SEMICOLON DELIMITED CSV file in the ROOT FOLDER. TODO: Consider nesting this to prevent shallow visibility.
+                url: "supplier_markers.csv",
+
+                //type of data to expect
+                dataType: "text",
+
+                //success will run a function when the pairs above resolve successfully
+                success: function (data) {
+
+                    // split file into entries by linebreak
+                    var supplier_list = data.split(/\r?\n|\r/);
+
+                    console.log('Supplier list retrieved: ' + supplier_list + '\n\r Which is object type: ' + typeof (supplier_list));
+
+                    //Keep track of the # of  markers. Skip the first (these are table headers). This will be used to match legend tags with map marker numbers.
+                    var markerTracker = 0;
+
+                    //Process the supplier_list array into a unique "supplier" string each time we iterate. 
+                    //Skip the first - these are table headers.
+                    for (var counter = 0; counter < supplier_list.length; counter++) {
+                        markerTracker++; // Signal the beginning of the marker creation iterations.
+
+
+                        // Split the supplier_list into entries
+                        var supplier = supplier_list[counter].split(";");
+
+
+                        console.log(supplier);
+                        console.log(typeof (supplier));
+
+
+                        //split the current index into the separated values for this entry
+                        console.log('Supplier currently indexed: ' + supplier + '\n Which is object type: ' + typeof (supplier));
+
+                        if (counter > 0) { //If this is the first iteration, skip the supplier headers.
+
+                            console.log(`FAILED: This data field is blank: ${supplier}`);
+                            console.log('FAILED: This data field is blank: ' + supplier_data);
+
+
+                        } else {
+                            // If this is the first iteration, skip the supplier headers.
+                            continue; //Break this iteration and do not read information from this data field.
+
+
+
+                            /*                                 console.log(`SUCCESS: This data field is populated: ${supplier}`);
+                                                            console.log('SUCCESS: This data field is populated: ' + supplier_data); */
+                        }
+
+
+
+                    }
+                }
+            });
+        });
+
+    });
+
+
+
+
+
+</script>
