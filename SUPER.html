@@ -56,43 +56,63 @@
 
                     console.log('Supplier list retrieved: ' + supplier_list + '\n\r Which is object type: ' + typeof (supplier_list));
 
-                    //Keep track of the # of  markers. Skip the first (these are table headers). This will be used to match legend tags with map marker numbers.
+                    //Keep track of the # of  markers. This will be used to match legend tags with map marker numbers. Skip the first (these are table headers). 
                     var markerTracker = 0;
 
-                    //Process the supplier_list array into a unique "supplier" string each time we iterate. 
-                    //Skip the first - these are table headers.
+                    //Process the supplier_list array into a unique "supplier" string each time we iterate. This is the index counter.
                     for (var counter = 0; counter < supplier_list.length; counter++) {
-                        markerTracker++; // Signal the beginning of the marker creation iterations.
 
 
-                        // Split the supplier_list into entries
+                        // Split the supplier_list into entries. This is another Array containinf the information for one supplier.
                         var supplier = supplier_list[counter].split(";");
 
 
-                        console.log(supplier);
-                        console.log(typeof (supplier));
+                        //If this is the first iteration, increment the counter and skip the supplier headers.
+                        if (counter === 0 || supplier[0] === "") {
+                            markerTracker++;
+                            //TODO: WE will create an array containing all headers - this will be our temp variable names!!
+                            //Or will we??..
 
-
-                        //split the current index into the separated values for this entry
-                        console.log('Supplier currently indexed: ' + supplier + '\n Which is object type: ' + typeof (supplier));
-
-                        if (counter > 0) { //If this is the first iteration, skip the supplier headers.
-
-                            console.log(`FAILED: This data field is blank: ${supplier}`);
-                            console.log('FAILED: This data field is blank: ' + supplier_data);
+                            //Stop this iteration and do not read information from this data field.
+                            continue;
 
 
                         } else {
-                            // If this is the first iteration, skip the supplier headers.
-                            continue; //Break this iteration and do not read information from this data field.
+
+                            // Code that will run on the rest of the iterations that pass the conditions.
+
+                            //split the current index into the separated values for this entry
+                            // *****UNCOMMENT FOR DEBUG*****
+                            console.log(markerTracker);
+                            console.log('Supplier currently indexed: ' + supplier + '\n Which is data type: ' + typeof (supplier));
+
+
+                            //This is the loop that will iterate through the data fields of each supplier. Here we will work on the data.
+                            for (var cell_counter = 0; cell_counter < supplier.length; cell_counter++) {
+
+
+                                var currName = supplier[0];//first element is name. we will trim it and create the ID.
+                                //TODO: We can technically add 0-6 right now. But how will we handle empty cells? with NA?(smart to include blank)
+
+                                var currDataID = currName.replace(/[^a-zA-Z0-9]/g, ''); //Strip name of all spaces and characters
+                                currDataID = currDataID.charAt(0) + currDataID.substring(1).toLowerCase();
 
 
 
-                            /*                                 console.log(`SUCCESS: This data field is populated: ${supplier}`);
-                                                            console.log('SUCCESS: This data field is populated: ' + supplier_data); */
+
+                                console.log(supplier[cell_counter]);
+                                console.log(currDataID);
+                                //eval();//we will use eval to create the dynamic variables for each iteration.
+
+
+
+
+
+                            }
+                            //After Creating this marker, increment the counter for the next one.
+                            markerTracker++;
+                            console.log(markerTracker);
                         }
-
-
 
                     }
                 }

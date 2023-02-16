@@ -28,3 +28,79 @@ for (var counter = 0; counter < supplier_list.length; counter++) {
 
   markerCount++;
 } //This is where we close tags for the  SUPPLIER_LIST iterations.
+
+
+
+
+
+
+                        var icounter = 0;
+                        var writeString = false; //allow quotation-enclosed strings to be written
+                        var currSupplier;
+
+                        for (supplier_data in supplier) { // SPLIT THE SUPPLIER INTO ITS DATA PIECES FOR PROCESSING
+                            icounter++; // index tracker
+                            console.log(icounter); //);
+                            //console.log('This is entry ' + icounter + ', which contains data: ' + supplier_data);
+
+
+                            /* currSupplier = supplier_data[icounter].split(",");
+                            console.log(currSupplier.values()); */
+                            /*
+                            Check processed code for identifier?
+                            if (supplier_data.values().includes('"')) {
+                                writeString = !writeString; //
+                            }
+                             */
+
+                          
+                          
+                          
+                                                      if (supplier_data == "NA" || "") {
+
+                                console.log(`FAILED: This data field is blank: ${supplier}`);
+                                console.log('FAILED: This data field is blank: ' + supplier_data);
+
+                                //Manipulate the first cell of data differently [the first iteration]
+                            } else {
+                                // Manipulate the rest of the data afterwards [subsequent iterations]
+
+                                /*                                 console.log(`SUCCESS: This data field is populated: ${supplier}`);
+                                                                console.log('SUCCESS: This data field is populated: ' + supplier_data); */
+                            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
