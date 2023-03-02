@@ -39,7 +39,7 @@
   --bs-gray-900: #212529;
   --bs-primary: #378dfc;
   --bs-secondary: #d9e3f1;
-  --bs-success: #43cc29;
+  --bs-success: #699e06;
   --bs-info: #5b62f4;
   --bs-warning: #ffc107;
   --bs-danger: #e52527;
@@ -47,7 +47,7 @@
   --bs-dark: #212529;
   --bs-primary-rgb: 55, 141, 252;
   --bs-secondary-rgb: 217, 227, 241;
-  --bs-success-rgb: 67, 204, 41;
+  --bs-success-rgb: 105, 158, 6;
   --bs-info-rgb: 91, 98, 244;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 229, 37, 39;
@@ -8579,6 +8579,11 @@ fieldset:disabled .btn {
   ) !important;
 }
 
+.bg-markerglyph {
+  --bs-bg-opacity: 1;
+  background-color: var(--bs-markerglyph), var(--bs-bg-opacity) !important;
+}
+
 .bg-info {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
@@ -8714,6 +8719,11 @@ fieldset:disabled .btn {
 
 .rounded-pill {
   border-radius: var(--bs-border-radius-pill) !important;
+  background: #699e06 !important;
+}
+.rounded-pill2 {
+  border-radius: var(--bs-border-radius-pill) !important;
+  background: #003b5c !important;
 }
 
 .rounded-top {
@@ -12066,7 +12076,6 @@ th {
 
 #map {
   height: 48rem;
-  width: 100%;
 }
 
 .supplier-item {

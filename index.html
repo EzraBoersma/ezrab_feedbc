@@ -9,6 +9,10 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <!--   <script src="../scripts/index.js"></script> -->
 
+
+  <script defer src="./assets/brands.js"></script>
+  <script defer src="./assets/solid.js"></script>
+  <script defer src="./assets/fontawesome.js"></script>
   <includes>
   </includes>
 
@@ -63,7 +67,7 @@
     $(document).ready(function () {
       $("#map_btn").click(function () {
         $.ajax({
-          url: "./includes/map.html", success: function (result) {
+          url: "./includes/finalmap.html", success: function (result) {
             $("#mainpanel").html(result);
           }
         });
@@ -124,13 +128,14 @@
 
       </div>
 
-      <div class="row pt-5">
+      <div class="row pt-5 gy-3
+      ">
         <div class="col-lg-6">
           <button type="button" id="order_btn" class="btn btn-primary btn-lg btn-lg2">
             ORDER
           </button>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 gy-3">
           <button type="button" id="map_btn" class="btn btn-primary btn-lg btn-lg2">
             MAP
           </button>

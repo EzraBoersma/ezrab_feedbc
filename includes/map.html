@@ -58,38 +58,84 @@
 
 
 
+
+
+            //Check  if there are NA or empty sections in the data row.
+            //Code  goes here....
+
+
+
+            //iteration variables
+            var id = "StringID",
+                pointVar = new google.maps.LatLng(49.071574289007046, -123.83757095735695),
+                liVar = document.getElementById(`li${id}`),
+                title = `Fredrich's Honey  Farm`,
+                address = `2798 Cedar Road, Nanaimo, BC`,
+                ingredients = `Honey, Bees`,
+                description = `Located in the picturesque Cedar, British Columbia, just 20 minutes south of Nanaimo, the Fredrich's Honey farm has been in
+          operation since 1966, passed down through the generations. We believe that the key to producing the finest honey lies in the
+          care and maintenance of our hives. Every aspect of our operation is
+          designed to promote the health and well-being of our bees.`,
+                imgpath = "fredrichs",
+                imgdesc = "beekeepers in field with hives and forklift", //alt description for screen readers
+                weblink = "https://www.fredrichshoney.com/"; // this is used as a reference for the  supplier. maybe add a button
+            //maybe: plus button, whitelist supplier urls?
+
+
+
+
+            //using all the data,  we can write the content for the infoWwindow. After we can create the marker object.
             //declare under map
             const contentString =
-                '<div id="content">' +
+                '<div id="content" class="container">' +
                 '<div id="siteNotice">' +
                 "</div>" +
-                '<h1 id="firstHeading" class="firstHeading">Fredrich\'s Honey</h1>' +
-                '<h6 id="addrHeading" class="addrHeading">2798 Cedar Road, Nanaimo, BC</h6>' +
-                '<img src="../images/fredrichs.jpg" class="h-50 w-50 rounded mx-auto d-block" alt="beekeepers in field with hives and forklift"></img>' +
-                '<div id="bodyContent">' +
-                "<p>Located in the picturesque Cedar, British Columbia, just 20 minutes south of Nanaimo, " +
-                "the Fredrich's Honey farm has been in operation since 1966, passed down through the generations. " +
-                "We believe that the key to producing the finest honey lies in the care and maintenance of our hives. " +
-                "That's why we use only the most natural and sustainable methods in our beekeeping operations. " +
-                "From the materials we use to construct our hives, to the methods we employ to care for our bees, " +
-                "every aspect of our operation is designed to promote the health and well-being of our bees.</p>" +
-                "</div>" +
-                "</div>",
+                '<div class="row mb-3">' +
+                '<div class="col-lg-12">' +
+                `<h1 id="firstHeading" class="firstHeading mt-1">${title}</h1>` + //
+                `<h6 id="addrHeading" class="addrHeading">${address}</h6>` + //
+                '<div class="row gy-2">' +
+                '<div class="col-md-6">' +
+
+                `<img src="../images/${imgpath}.jpg" class="h-auto w-100 rounded mx-auto d-block mt-5" alt="${imgdesc}"></img>` +
+
+                '</div>' +
+
+                '<div class="col-md-6">' +
+                '<div id="bodyContent" class="h-auto w-100">' +
+
+                `<p class="gy-3 mt-5"><span class="align-middle">
+                    ${description}
+                    <br><br><br>
+                    <span class="fw-bold">Local Ingredient(s): ${ingredients}.</span>
+          
+                </span></p>`+
+
+
+
+                '</div>' +
+                '</div>' +
+
+                '</div>' +
+                '</div>' +
+
+                '</div>' +
+                '</div>',
 
                 infowindow = new google.maps.InfoWindow({   //this is the info window for the currently selected marker
                     content: contentString,
                     ariaLabel: "Fredrich's Honey",
-                }),
+                });
 
 
-                markerVIU = new google.maps.Marker({
-                    position: pointVIU,
-                    title: "point VIU",
-                    label: " ",
-                    map: map,
-                }),
+            new google.maps.Marker({
+                position: pointVIU,
+                title: "point VIU",
+                label: " ",
+                map: map,
+            }),
                 markerFredrichs = new google.maps.Marker({ //link
-                    position: pointFredrichs,
+                    position: new google.maps.LatLng(49.071574289007046, -123.83757095735695),
                     title: "point Fredrichs",
                     label: "1",
                     map: map,
@@ -184,7 +230,7 @@
 
 
     <div class="col-lg-3">
-        <ul class="list-group">
+        <ul class="list-group overflow-auto">
 
             <li id="liFredrichs"
                 class="list-group-item d-flex justify-content-between align-items-center supplier-item">
