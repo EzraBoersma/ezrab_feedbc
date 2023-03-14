@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VIU: Project Brain Food</title>
+  <link rel="stylesheet" href="https://use.typekit.net/zdz3qhh.css">
   <link rel="stylesheet" href="./styles/bootstrap.css" />
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <!--   <script src="../scripts/index.js"></script> -->
@@ -13,15 +14,18 @@
   <script defer src="./assets/brands.js"></script>
   <script defer src="./assets/solid.js"></script>
   <script defer src="./assets/fontawesome.js"></script>
+
+  <!-- TODO: This should be written out for clarity - the includes tag is very ambiguous. -->
   <includes>
   </includes>
 
   <!-- This needs to be outside includes because it is used to actually handle them -->
   <script src="./scripts/jquery.min.js"></script>
-
+  <script src="./scripts/popper.min.js"></script>
   <script src="./scripts/bootstrap.min.js"></script>
 
   <script>
+
 
     /* Reuse segments of code instead of rewriting each section.
       Using fetch to write the page */
@@ -83,6 +87,17 @@
         });
       });
     });
+    $(document).ready(function () {
+      $("#menu_btn_nav").click(function () {
+        $.ajax({
+          url: "./includes/outletmenu.html", success: function (result) {
+            $("#mainpanel").html(result);
+          }
+        });
+      });
+    });
+
+    $(function () { objectFitImages() });
 
 
 
@@ -93,26 +108,70 @@
 
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-customimg">
+    <div class="container-fluid">
+      <span><a class="navbar-brand" href="index.html"> <img src="./images/navbackground/feedBC.png" width="20%"> </a>
 
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
+        aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" aria-expanded="false" id="navBar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">View Menu</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="menu_btn_nav">Green Mountain</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" id="menu_btn_nav">Mt. Benson Market</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" id="menu_btn_nav">The Roost</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" id="menu_btn_nav">Arrowsmith Grill</a>
 
-
-
-
-
-
-  <div class="container" id="mainpanel" align="center">
-    <div class="container">
-      <div class="row gy-5">
-        <div class="col-lg-12">
-          <header>
-
-          </header>
-
-        </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="row gy-5 gx-5 pb-5 pt-5">
-        <h3>Explore Food Service Options</h3>
+    </div>
+  </nav>
+
+
+
+
+
+  <div class="jumbotron jumbotron-fluid bg-dark h-100 overflow-scroll" id="mainpanel" align="center">
+
+    <div class="jumbotron-background">
+      <img src="./images/navbackground/md-navbg.jpg" class="blur ">
+    </div>
+
+    <!-- /.spacer for blurred jumbotron -->
+    <div class="row gy-5 pt-5">
+      <div class="col-lg-12">
+
+
+      </div>
+    </div>
+    <!-- /.container -->
+
+
+
+    <div class="container">
+
+
+      <div class="row gy-5 gx-5 pb-5">
+        <h1>Explore VIU Food Service Options</h1>
         <div class="col-lg-3">
           <button type="button" id="menu_btn" class="btn btn-primary btn-lg btn-lg1 p-4">Green Mountain</button>
         </div>
@@ -123,13 +182,12 @@
           <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">Arrowsmith Grill</button>
         </div>
         <div class="col-lg-3">
-          <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">Mount Benson Market</button>
+          <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">Mt. Benson Market</button>
         </div>
 
       </div>
 
-      <div class="row pt-5 gy-3
-      ">
+      <div class="row pt-5 gy-3">
         <div class="col-lg-6">
           <button type="button" id="order_btn" class="btn btn-primary btn-lg btn-lg2">
             ORDER
@@ -145,13 +203,12 @@
 
 
     </div>
-    <footer>
 
-    </footer>
+
 
 
   </div>
-  </div>
+  <!-- /.jumbotron -->
 
 
 

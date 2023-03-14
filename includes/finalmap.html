@@ -27,7 +27,7 @@
         function initMap() {
 
 
-            var pointVIU = new google.maps.LatLng(49.15730703858696, -123.96634614426951),
+            const pointVIU = new google.maps.LatLng(49.15730703858696, -123.96634614426951),
                 boundary_coords = {
                     /* These values are the coordinate boundaries that this map's viewport will be locked to. */
                     north: 60.5,
@@ -43,11 +43,12 @@
                         strictBounds: false,
                     },
                     mapId: "d05c27659b89fe15",
+                    streetViewControl: false,
                 },
                 map = new google.maps.Map(document.getElementById("map"), myOptions);
 
             const contentVIU =
-                '<div id="content" class="container">' +
+                '<div id="content" class="container1">' +
                 '<div id="siteNotice">' +
                 "</div>" +
                 '<div class="row mb-3">' +
@@ -236,7 +237,7 @@
 
                             //This is the grid layout that will be used for each infoWindow when clicked.
                             const contentString =
-                                '<div id=" content" class="container">' +
+                                '<div id=" content" class="container1">' +
                                 '<div id="siteNotice">' +
                                 "</div>" +
                                 '<div class="row mb-3">' +
