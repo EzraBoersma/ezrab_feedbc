@@ -38,13 +38,7 @@
         document.querySelector("header").innerHTML = data;
       });
 
-    fetch("./includes/footer.html")
-      .then(response => {
-        return response.text()
-      })
-      .then(data => {
-        document.querySelector("footer").innerHTML = data;
-      });
+
 
     fetch("./includes/includes.html")
       .then(response => {
@@ -110,9 +104,12 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-customimg">
     <div class="container-fluid">
-      <span><a class="navbar-brand" href="index.html"> <img src="./images/navbackground/feedBC.png" width="20%"> </a>
+      <a class="navbar-brand" href="index.html"> <img src="./images/navbackground/feedBC.png" width="20%">
 
-      </span>
+      </a>
+
+
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
         aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -149,11 +146,10 @@
 
 
 
+  <div class="jumbotron jumbotron-fluid bg-dark" id="mainpanel" align="center">
 
-  <div class="jumbotron jumbotron-fluid bg-dark h-100 overflow-scroll" id="mainpanel" align="center">
+    <div class="jumbotron-background blur">
 
-    <div class="jumbotron-background">
-      <img src="./images/navbackground/md-navbg.jpg" class="blur ">
     </div>
 
     <!-- /.spacer for blurred jumbotron -->
@@ -171,7 +167,7 @@
 
 
       <div class="row gy-5 gx-5 pb-5">
-        <h1>Explore VIU Food Service Options</h1>
+        <h1 class="" id="navbanner">Explore VIU Food Service Options</h1>
         <div class="col-lg-3">
           <button type="button" id="menu_btn" class="btn btn-primary btn-lg btn-lg1 p-4">Green Mountain</button>
         </div>
@@ -207,8 +203,33 @@
 
 
 
+    <!-- /.jumbotron -->
   </div>
-  <!-- /.jumbotron -->
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Vancouver Island University Food Services</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook"></use>
+            </svg></a></li>
+      </ul>
+    </footer>
+  </div>
 
 
 

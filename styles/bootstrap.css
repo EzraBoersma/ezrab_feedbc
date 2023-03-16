@@ -12044,8 +12044,7 @@ body {
 }
 
 #mainpanel {
-  height: 100%;
-  width: 100%;
+min-height: 100vh;
 }
 
 .supplier-item {
@@ -12069,10 +12068,11 @@ body {
   padding: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
+  background-size: cover;
 }
 
 .jumbotron-background {
-  object-fit: cover;
+  object-fit: contain;
   font-family: "object-fit: cover;";
   position: absolute;
   top: 0;
@@ -12080,12 +12080,15 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.5;
+  background-size: cover;
+  overflow-y: hidden;
 }
 
-img.blur {
+.blur {
   -webkit-filter: blur(4px);
   filter: blur(4px);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+  
 }
 
 
@@ -12100,6 +12103,7 @@ img.blur {
     font-size: calc(1.375rem + 0.5vw);
 
   }
+
 }
 
 /* Small devices */
@@ -12110,6 +12114,7 @@ img.blur {
     font-size: calc(1.4rem + 0.5vw);
 
   }
+
 }
 
 /* Medium devices (tablet)*/
@@ -12117,19 +12122,37 @@ img.blur {
 
 
 }
+
 /* Large devices */
 @media (max-width: 1200px) {
     .btn {
     font-size: calc(1.375rem + 0.5vw);
-    padding: 10%;
+    
   }
-
-
+     .jumbotron-background {
+    background-image: url('../images/navbackground/md-navbg.jpg');
+}
 
 }
-/* X-Large devices */
-@media (max-width: 380px) {
+/* Large devices */
+@media (min-width: 1201px) {
+    .btn {
+    font-size: calc(1.375rem + 0.5vw);
+    
+  }
+     .jumbotron-background {
+    background-image: url('../images/navbackground/lg-navbg.jpg');
+}
 
+}
+
+/* X-Large devices */
+@media (max-width: 1930px) {
+
+
+     .jumbotron-background {
+    background-image: url('../images/navbackground/lg-navbg.jpg');
+}
 
 
 }
