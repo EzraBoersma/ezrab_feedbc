@@ -5,50 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VIU: Project Brain Food</title>
+
+  <!-- Font package - Proxima Nova Semibold -->
   <link rel="stylesheet" href="https://use.typekit.net/zdz3qhh.css">
   <link rel="stylesheet" href="./styles/bootstrap.css" />
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <!--   <script src="../scripts/index.js"></script> -->
 
 
+  <!-- Glyphs for map marker icons -->
   <script defer src="./assets/brands.js"></script>
   <script defer src="./assets/solid.js"></script>
   <script defer src="./assets/fontawesome.js"></script>
 
-  <!-- TODO: This should be written out for clarity - the includes tag is very ambiguous. -->
-  <includes>
-  </includes>
-
-  <!-- This needs to be outside includes because it is used to actually handle them -->
-  <script src="./scripts/jquery.min.js"></script>
+  <!-- JS scripts for animation and styling -->
+  <script src="../scripts/jquery.min.js"></script>
   <script src="./scripts/popper.min.js"></script>
-  <script src="./scripts/bootstrap.min.js"></script>
+  <script src="../scripts/bootstrap.min.js"></script>
 
-  <script>
-
-
-    /* Reuse segments of code instead of rewriting each section.
-      Using fetch to write the page */
-
-    fetch("./includes/header.html")
-      .then(response => {
-        return response.text()
-      })
-      .then(data => {
-        document.querySelector("header").innerHTML = data;
-      });
-
-
-
-    fetch("./includes/includes.html")
-      .then(response => {
-        return response.text()
-      })
-      .then(data => {
-        document.querySelector("includes").innerHTML = data;
-      });
-
-  </script>
   <script>
 
     $(document).ready(function () {
@@ -90,10 +63,6 @@
         });
       });
     });
-
-
-
-
 
   </script>
 
@@ -144,23 +113,14 @@
 
     <div class="jumbotron h-100 jumbotron-fluid bg-dark" align="center">
 
-
       <div class="jumbotron-background blur">
-
-
       </div>
-
-
-
-      <!-- /.container -->
-
-
 
       <div class="container" id="mainpanel">
 
 
 
-        <div class="row gy-5 gx-5 pb-5">
+        <div class="row gy-5 gx-5 pb-5" id="btn_body">
           <h1 class="pt-5" id="navbanner">Explore VIU Food Service Options</h1>
           <div class="col-lg-3">
             <button type="button" id="menu_btn" class="btn btn-primary btn-lg btn-lg1 p-4">Green Mountain</button>
@@ -177,33 +137,33 @@
 
         </div>
 
-        <div class="row pt-5 gy-3">
+        <div class="row pt-5 gy-3" id="btn_row2">
           <div class="col-lg-6">
             <button type="button" id="order_btn" class="btn btn-primary btn-lg btn-lg2">
-              ORDER
+              Order Online
             </button>
           </div>
           <div class="col-lg-6 gy-3">
             <button type="button" id="map_btn" class="btn btn-primary btn-lg btn-lg2">
-              MAP
+              View Local Food Map
             </button>
           </div>
         </div>
 
       </div>
+      <!-- /.container -->
 
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
-          <div class="col-xl d-flex align-items-center">
-            <span class="mb-3 mb-md-0 text-muted"> Vancouver Island University Food Services © 2022 Ezra Boersma</span>
-          </div>
-        </footer>
-      </div>
 
+    </div>
+
+    <div class="fixed-bottom footer" align="center">
+      <span class="mb-3 mb-md-0 text-muted"> Vancouver Island University Food Services © 2023 Ezra Boersma</span>
     </div>
 
     <!-- /.jumbotron -->
   </div>
+
+
 
 
 

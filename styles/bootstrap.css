@@ -727,7 +727,7 @@ progress {
   .container-md,
   .container-sm,
   .container {
-    max-width: 1320px;
+    max-width: 85vw;
   }
 }
 .row {
@@ -12034,7 +12034,12 @@ th {
 }
 
 #map {
-  height: 48rem;
+  height: 48vh;
+}
+
+#legend {
+max-height: 48vh;
+overflow-y: scroll;
 }
 
 html,
@@ -12045,13 +12050,12 @@ body {
 
 .wrapper {
 height: 100%;
-
 }
 
 #mainpanel {
-height: 100%;
+min-height: 50%;
 margin-top: 15vh;
-
+padding-bottom: 3vh;
 }
 
 
@@ -12073,7 +12077,6 @@ margin-top: 15vh;
   border-radius: 3px;
   background-size: contain;
   max-height: fit-content;
-  
 }
 
 .jumbotron-background {
@@ -12093,7 +12096,6 @@ margin-top: 15vh;
   -webkit-filter: blur(4px);
   filter: blur(4px);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
-  
 }
 
 
@@ -12101,6 +12103,14 @@ margin-top: 15vh;
 position: absolute;
 width: 100vw;
 z-index: 999;
+padding-left: 1vw;
+padding-right: 1vw;
+}
+
+
+
+.footer {
+  font-size: 0.82rem;
 }
 
 /* Custom sizing for legend items (suppliers) */
@@ -12114,25 +12124,41 @@ z-index: 999;
 /* ******MEDIA QUERIES for fonts, images and layouts****** */
 /* Tiny devices */
 @media (max-width: 380px) {
-  .btn {
+  .btn, .btn-lg1, .btn-lg2 {
     font-size: calc(1.375rem + 0.5vw);
     padding: 10%;
   }
 
-  .nav-link {
-    font-size: calc(1.375rem + 0.5vw);
+.nav-link {
+font-size: calc(1.375rem + 0.5vw);
 
-  }
+}
+
+#legend {
+max-height: 15vh;
+}
+
+#mainpanel {
+margin-top: 5vh;
+}
+
+#btn_row2{
+margin-top: 1rem !important;
+
+}
+
 
 }
 
 /* Small devices */
 @media (max-width: 418px) {
-
-
   .nav-link {
     font-size: calc(1.4rem + 0.5vw);
 
+  }
+  .row > * {
+    margin-top: 1rem;
+    /*TODO: avoid creating content scroll on mobile */
   }
 
 }
@@ -12153,16 +12179,27 @@ z-index: 999;
     background-image: url('../images/navbackground/md-navbg.jpg');
 }
 
+
+
 }
 /* Large devices */
 @media (min-width: 1201px) {
     .btn {
-    font-size: calc(1.375rem + 0.5vw);
+    font-size: calc(1rem + 0.5vw);
     
   }
+
+  #btn_body{
+margin-left: 6rem;
+margin-right: 6rem;
+margin-top: 0;
+  
+}
      .jumbotron-background {
     background-image: url('../images/navbackground/lg-navbg.jpg');
 }
+
+
 
 }
 
