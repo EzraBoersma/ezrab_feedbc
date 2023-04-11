@@ -14,10 +14,9 @@
  */
 /*!
  * FeedBC Project Design Definition
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
@@ -692,7 +691,7 @@ progress {
 }
 
 .figure-caption {
-  font-size: 0.875em;
+  font-size: 0.3em;
   color: #7f8a99;
 }
 
@@ -3783,7 +3782,7 @@ fieldset:disabled .btn {
   --bs-dropdown-padding-y: 0.5rem;
   --bs-dropdown-spacer: 0.125rem;
   --bs-dropdown-font-size: 1rem;
-  --bs-dropdown-color: #7b8ab8;
+  --bs-dropdown-color: #003B5C;
   --bs-dropdown-bg: rgba(240, 245, 250, 0.8);
   --bs-dropdown-border-color: transparent;
   --bs-dropdown-border-radius: 0.375rem;
@@ -3794,8 +3793,8 @@ fieldset:disabled .btn {
   --bs-dropdown-box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15),
     inset 1px 1px 3px rgba(255, 255, 255, 0.5),
     inset -5px -5px 20px rgba(0, 0, 0, 0.05);
-  --bs-dropdown-link-color: #7b8ab8;
-  --bs-dropdown-link-hover-color: #444b40;
+  --bs-dropdown-link-color: #003B5C;
+  --bs-dropdown-link-hover-color: #0085CA;
   --bs-dropdown-link-hover-bg: transparent;
   --bs-dropdown-link-active-color: #fff;
   --bs-dropdown-link-active-bg: #378dfc;
@@ -5021,7 +5020,7 @@ fieldset:disabled .btn {
   --bs-accordion-inner-border-radius: 0.375rem;
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
-  --bs-accordion-btn-color: #7b8ab8;
+  --bs-accordion-btn-color: #003B5C;
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237b8ab8'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
@@ -5032,7 +5031,7 @@ fieldset:disabled .btn {
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(55, 141, 252, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
-  --bs-accordion-active-color: #327fe3;
+  --bs-accordion-active-color: #0085CA;
   --bs-accordion-active-bg: #ebf4ff;
 }
 
@@ -8349,6 +8348,14 @@ fieldset:disabled .btn {
   --bs-border-opacity: 1;
 }
 
+.w-10 {
+  width: calc(4rem + 0.2vw) !important;
+}
+
+.w-16 {
+  width: 16% !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -8399,6 +8406,10 @@ fieldset:disabled .btn {
 
 .h-auto {
   height: auto !important;
+}
+
+.mh-8 {
+  max-height: 8% !important;
 }
 
 .mh-100 {
@@ -13497,24 +13508,7 @@ fieldset:disabled .btn {
   backdrop-filter: blur(3px);
 }
 
-.progress {
-  box-shadow: inset 2px 4px 6px rgba(109, 114, 121, 0.2),
-    inset -3px -2px 5px rgba(255, 255, 255, 0.8);
-}
 
-.progress-bar {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.progress-bar:first-child {
-  border-top-left-radius: 50rem;
-  border-bottom-left-radius: 50rem;
-}
-
-.progress-bar:last-child {
-  border-top-right-radius: 50rem;
-  border-bottom-right-radius: 50rem;
-}
 
 .card {
   box-shadow: inset 2px 2px 6px rgba(109, 114, 121, 0.2),
@@ -13631,10 +13625,26 @@ th {
   overflow-y: scroll;
 }
 
+#legend-item {
+  font-size: small;
+
+}
+
+/* This will alter infoWindow layout  */
+
+@media(min-width: 767px) {
+
+  #bodyContent {
+    padding-right: 2.5rem;
+  }
+}
+
+
 html,
 body {
   height: 100%;
   width: 100%;
+  overflow-y: auto;
 }
 
 .wrapper {
@@ -13643,12 +13653,38 @@ body {
 
 #mainpanel {
   min-height: 50%;
+  max-height: 80vh;
   margin-top: 15vh;
   padding-bottom: 3vh;
   padding-top: 2vh;
+
 }
 
-#navbanner {}
+#description-body {
+  font-size: calc(1rem + 0.2vw);
+  color: var(--bs-gray-400);
+  text-align: left;
+}
+
+
+#nav-brand,
+.container,
+.navbar-toggler {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 
 
@@ -13669,9 +13705,13 @@ body {
   border-radius: 3px;
   background-size: contain;
   max-height: fit-content;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .jumbotron-background {
+
   object-fit: contain;
   font-family: "object-fit: cover;";
   position: absolute;
@@ -13682,6 +13722,8 @@ body {
   opacity: 0.5;
   background-size: cover;
   overflow-y: hidden;
+  background-image: url('../images/navbackground/lg-navbg.jpg');
+
 }
 
 .blur {
@@ -13706,7 +13748,7 @@ body {
 
 /* Custom sizing for legend items (suppliers) */
 .supplier-item {
-  font-size: 1rem;
+  font-size: calc(1rem + 0.4vw);
 }
 
 .container1 {
@@ -13728,10 +13770,21 @@ body {
   height: 15vh;
 }
 
+
+#menu_legend {
+  font-size: calc(.75rem + 0.2vw);
+  color: var(--bs-gray-400) !important;
+}
+
+.about {
+  height: 48vh !important;
+  overflow-y: scroll;
+}
+
 /* ********** Media Queries for mobile device layouts ********** */
 
 /* Smaller devices */
-@media (max-width: 930px) {
+@media (max-width:990px) {
   .nav-link {
     font-size: calc(1.4rem + 0.5vw);
 
@@ -13744,8 +13797,9 @@ body {
 
   .btn,
   .btn-lg1,
-  .btn-lg2 {
-    font-size: calc(1rem + 0.5vw);
+  .btn-lg2,
+  .accordion-button {
+    font-size: calc(1rem + 0.5vw) !important;
 
   }
 
@@ -13760,6 +13814,7 @@ body {
 
   #mainpanel {
     margin-top: 14vh;
+
   }
 
   #btn_row2 {
@@ -13796,6 +13851,7 @@ body {
     margin-left: 8rem;
     margin-right: 8rem;
     margin-top: 0;
+    overflow-y: auto;
 
   }
 
@@ -13805,13 +13861,14 @@ body {
 @media (max-width: 1930px) {
 
 
-  .jumbotron-background {
-    background-image: url('../images/navbackground/lg-navbg.jpg');
+  .btn,
+  .accordion-button {
+    font-size: calc(1rem + 0.7vw) !important;
   }
 
-  .btn {
-    font-size: calc(1rem + 0.7vw) !important;
+  .navbar {
 
+    font-size: calc(1rem + 0.9vw) !important;
   }
 
 }
@@ -13820,13 +13877,16 @@ body {
 @media (min-width: 1931px) {
 
 
-  .jumbotron-background {
-    background-image: url('../images/navbackground/navbg.jpg');
+  .supplier-item {
+    font-size: calc(1rem + 0.5vw);
   }
 
-  #legend {
-    max-height: 48vh;
+  .btn,
+  .accordion-button {
+    font-size: calc(1rem + 0.7vw) !important;
   }
+
+
 }
 
 /* This will alter infoWindow layout  */
@@ -13839,3 +13899,6 @@ body {
 
 
 }
+
+/* Large devices */
+@media (min-width: 1201px) {}

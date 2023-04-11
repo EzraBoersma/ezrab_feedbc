@@ -56,11 +56,27 @@
         });
       });
     });
+
+
+
+    /* Nav button listeners */
     $(document).ready(function () {
       $("#menu_btn_nav").click(function () {
         $.ajax({
           url: "./includes/outletmenu.html", success: function (result) {
-            $("#mainpanel").html(result);
+            $("#mainpanel").html(result),
+              $(".navbar-collapse").removeClass("show");
+          }
+        });
+      });
+    });
+
+    $(document).ready(function () {
+      $("#about_btn_nav").click(function () {
+        $.ajax({
+          url: "./includes/about.html", success: function (result) {
+            $("#mainpanel").html(result),
+              $(".navbar-collapse").removeClass("show");
           }
         });
       });
@@ -74,16 +90,24 @@
 <body>
   <div class="wrapper">
 
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-customimg">
 
-      <a class="navbar-brand" href="index.html"> <img src="./images/navbackground/feedBC.png" width="12%">
-      </a>
-
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img id="nav-brand" src="./images/navbackground/feedBC.png"
+            alt="Feed BC logo: Bringing BC foods to public institutions" width="12%" height="auto"
+            class="d-inline-block align-text-top">
+        </a>
+      </div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
         aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+
+
       <div class="collapse navbar-collapse" aria-expanded="false" id="navBar">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
@@ -92,7 +116,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" id="about_btn_nav">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -159,7 +183,8 @@
     </div>
 
     <div class="fixed-bottom footer" align="center">
-      <span class="mb-3 mb-md-0 text-muted"> Vancouver Island University Food Services 2023 © Made by Ezra Boersma.
+      <span class="mb-3 mb-md-0 text-muted"> Vancouver Island University Food Services<br />Made by Ezra
+        Boersma.
       </span>
     </div>
 
@@ -168,22 +193,8 @@
 
 
 
-
-
-
   <!--./close Wrapper -->
   </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 

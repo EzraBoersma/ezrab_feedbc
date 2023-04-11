@@ -177,3 +177,8 @@
 
 
 }
+
+
+
+other items: each line will have a: 1(0) - menu category identifier 2(1) - item name 3(2) - item description 4(3) - ingredients 5(4) - local ingredients 6(5) - diet 7(6) - nutrition label Define diet icons (be sure to check styling) **Is this necessary?? probably,
+to access category array by index rather than another value** make an array with all menu categories (Breakfast, Lunch, Grab&Go. etc) Read in file data break lines into menu items Read menu items into parent (menu category) array Create accordion button for each menu category <h3 class="legend-heading">Dietary Guides</h3><img class="img-responsive h-auto w-10 rounded mx-auto d-block" src="../images/icons/DairyFree.png"><img class="img-responsive h-auto w-10 rounded mx-auto d-block" src="../images/icons/GFOptions.png"><img class="img-responsive h-auto w-10 rounded mx-auto d-block" src="../images/icons/Vegetarian.png"><img class="img-responsive h-auto w-10 rounded mx-auto d-block" src="../images/icons/GlutenFree.png"><img class="img-responsive h-auto w-10 rounded mx-auto d-block" src="../images/icons/Vegan.png">
