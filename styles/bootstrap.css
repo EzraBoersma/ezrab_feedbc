@@ -8356,8 +8356,20 @@ fieldset:disabled .btn {
   width: 16% !important;
 }
 
+.w-20 {
+  width: 20% !important;
+}
+
 .w-25 {
   width: 25% !important;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-45 {
+  width: 45% !important;
 }
 
 .w-50 {
@@ -8410,6 +8422,18 @@ fieldset:disabled .btn {
 
 .mh-8 {
   max-height: 8% !important;
+}
+
+.mh-45 {
+  max-height: 45% !important;
+}
+
+.mh-50 {
+  max-height: 50% !important;
+}
+
+.mh-55 {
+  max-height: 55% !important;
 }
 
 .mh-100 {
@@ -13619,6 +13643,11 @@ th {
   height: 48vh;
 }
 
+#menuaccordion {
+  max-height: 55vh;
+  overflow-y: auto;
+}
+
 #legend {
   margin-top: 4vh;
   max-height: 48vh;
@@ -13629,6 +13658,8 @@ th {
   font-size: small;
 
 }
+
+.legend-heading {}
 
 /* This will alter infoWindow layout  */
 
@@ -13762,7 +13793,7 @@ body {
 }
 
 .addrHeading {
-  color: #003b5c;
+  color: #003b5c !important;
 }
 
 .map-thumbnail {
@@ -13812,8 +13843,14 @@ body {
     max-height: 15vh;
   }
 
+  #dietary-guide {
+    max-height: 15vh;
+    overflow-y: scroll !important;
+  }
+
   #mainpanel {
     margin-top: 14vh;
+
 
   }
 

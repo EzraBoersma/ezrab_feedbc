@@ -51,7 +51,8 @@
       $("#menu_btn").click(function () {
         $.ajax({
           url: "./includes/outletmenu.html", success: function (result) {
-            $("#mainpanel").html(result);
+            $("#mainpanel").html(result),
+              $("#nav-brand").attr("src", "./images/imgassets/site/greenmountain.jpg");
           }
         });
       });
@@ -65,7 +66,8 @@
         $.ajax({
           url: "./includes/outletmenu.html", success: function (result) {
             $("#mainpanel").html(result),
-              $(".navbar-collapse").removeClass("show");
+              $(".navbar-collapse").removeClass("show"),
+              $("#nav-brand").attr("src", "./images/imgassets/site/greenmountain.jpg");
           }
         });
       });
@@ -183,7 +185,7 @@
     </div>
 
     <div class="fixed-bottom footer" align="center">
-      <span class="mb-3 mb-md-0 text-muted"> Vancouver Island University Food Services<br />Made by Ezra
+      <span class="mb-3 mb-md-0 text-muted"> Vancouver Island University Food Services<br /> Made by Ezra
         Boersma.
       </span>
     </div>
