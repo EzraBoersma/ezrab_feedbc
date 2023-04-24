@@ -4625,6 +4625,64 @@ fieldset:disabled .btn {
   }
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+  }
+
+  .navbar-expand-lg .navbar-nav-scroll {
+    overflow: visible;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-lg .offcanvas {
+    position: static;
+    z-index: auto;
+    flex-grow: 1;
+    width: auto !important;
+    height: auto !important;
+    visibility: visible !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    transform: none !important;
+    box-shadow: none;
+    transition: none;
+  }
+
+  .navbar-expand-lg .offcanvas .offcanvas-header {
+    display: none;
+  }
+
+  .navbar-expand-lg .offcanvas .offcanvas-body {
+    display: flex;
+    flex-grow: 0;
+    padding: 0;
+    overflow-y: visible;
+  }
+}
+
 @media (min-width: 1200px) {
   .navbar-expand-xl {
     flex-wrap: nowrap;
@@ -13700,7 +13758,8 @@ body {
 
 #nav-brand,
 .container,
-.navbar-toggler {
+.navbar-toggler,
+img {
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -13809,10 +13868,33 @@ body {
 
 .about {
   height: 48vh !important;
-  overflow-y: scroll;
+  overflow-y: auto scroll;
+}
+
+/* This is just a rough idea of what we want for the actual idon class styling */
+.dieticon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 /* ********** Media Queries for mobile device layouts ********** */
+
+/* This will alter infoWindow layout when we break out into the horizontal layout. */
+
+@media(min-width: 767px) {
+
+  #bodyContent {
+    padding-right: 2.5rem;
+  }
+
+
+}
 
 /* Smaller devices */
 @media (max-width:990px) {
@@ -13879,7 +13961,7 @@ body {
 /* ADD MEDIA QUERY FOR SMALLER GOBACK BUTTON ON XL SCREEN MAP*/
 
 
-/* Large devices */
+/* Medium devices */
 @media (min-width: 1201px) {
 
 
@@ -13897,7 +13979,12 @@ body {
 /* Large devices */
 @media (max-width: 1930px) {
 
+  /* Size of the supplier legend items*/
+  .supplier-item {
+    font-size: calc(1rem + 0.2vw);
+  }
 
+  /* Resizing text on main buttons - improves visibility */
   .btn,
   .accordion-button {
     font-size: calc(1rem + 0.7vw) !important;
@@ -13908,6 +13995,12 @@ body {
     font-size: calc(1rem + 0.9vw) !important;
   }
 
+  .infowindow-body {
+    font-size: calc(.70rem + 0.18vw) !important;
+  }
+
+
+
 }
 
 /* X-Large devices */
@@ -13915,7 +14008,7 @@ body {
 
 
   .supplier-item {
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(1rem + 0.4vw);
   }
 
   .btn,
@@ -13923,19 +14016,9 @@ body {
     font-size: calc(1rem + 0.7vw) !important;
   }
 
-
-}
-
-/* This will alter infoWindow layout  */
-
-@media(min-width: 767px) {
-
-  #bodyContent {
-    padding-right: 2.5rem;
+  .infowindow-body {
+    font-size: calc(.72rem + 0.2vw) !important;
   }
 
 
 }
-
-/* Large devices */
-@media (min-width: 1201px) {}

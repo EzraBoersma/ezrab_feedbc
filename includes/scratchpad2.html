@@ -1,60 +1,471 @@
-<div class="container" id="menuaccordion">
+<!-- Accordion start 
+    
+    https://getbootstrap.com/docs/5.0/components/collapse/ -->
+<div class="accordion" id="outlet-accordion">
 
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Breakfast
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+    <!-- Menu Category 1 start -->
+    <div class="accordion-item">
 
-                    <div class="accordion" id="sub-accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub-collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Waffles
-                                </button>
-                            </h2>
-                            <div id="sub-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="sub-headingOne" data-bs-parent="#collapseOne">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about waffles
+        <!-- Menu Category Heading 1 start -->
+        <h2 class="accordion-header" id="menuSection-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuCategory-1" aria-expanded="false" aria-controls="menuCategory-1">
+                MENU CATEGORY #1
+            </button>
+        </h2>
+
+
+        <!--    NESTED ACCORDION GOES HERE    -->
+
+
+        <div id="menuCategory-1" class="accordion-collapse collapse" aria-labelledby="menuSection-1"
+            data-bs-parent="#outlet-accordion">
+
+
+
+            <!-- ./ Menu Category 1 (will contain nested accordion of items)    -->
+        </div>
+
+
+
+
+
+        <!-- ./ Menu Category 1 END -->
+    </div>
+
+
+    <!-- Menu Category 2 start -->
+    <div class="accordion-item">
+
+        <!-- Menu Category Heading 2 start -->
+        <h2 class="accordion-header" id="menuSection-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuCategory-2" aria-expanded="false" aria-controls="menuCategory-2">
+                MENU CATEGORY #2
+            </button>
+        </h2>
+
+
+        <!--    NESTED ACCORDION GOES HERE    -->
+
+
+        <div id="menuCategory-2" class="accordion-collapse collapse" aria-labelledby="menuSection-2"
+            data-bs-parent="#outlet-accordion">
+
+
+
+            <!-- ./ Menu Category 2 (will contain nested accordion of items)    -->
+        </div>
+
+
+
+
+
+        <!-- ./ Menu Category 2 END -->
+    </div>
+
+    <!-- Menu Category 3 start -->
+    <div class="accordion-item">
+
+        <!-- Menu Category Heading 3 start -->
+        <h2 class="accordion-header" id="menuSection-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuCategory-3" aria-expanded="false" aria-controls="menuCategory-3">
+                MENU CATEGORY #3
+            </button>
+        </h2>
+
+
+        <!--    NESTED ACCORDION GOES HERE    -->
+
+
+        <div id="menuCategory-3" class="accordion-collapse collapse" aria-labelledby="menuSection-3"
+            data-bs-parent="#outlet-accordion">
+
+
+
+            <!-- ./ Menu Category 3 (will contain nested accordion of items)    -->
+        </div>
+
+
+
+
+
+        <!-- ./ Menu Category 3 END -->
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Poke Bowls
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#outlet-accordion">
+            <div class="accordion-body">
+                <div class="accordion" id="sub2-outlet-accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="sub2-menuSection-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sub2-menuCategory-1" aria-expanded="false" aria-controls="collapseTwo">
+                                Aloha<span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/GlutenFree.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/Vegetarian.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/DairyFree.png" /></span>
+                            </button>
+                        </h2>
+                        <div id="sub2-menuCategory-1" class="accordion-collapse collapse"
+                            aria-labelledby="sub2-menuSection-1" data-bs-parent="#sub2-outlet-accordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-3"><b class="addrHeading">Local
+                                            Ingredient(s):</b><br />Smoked salmon / yellowfin
+                                        tuna / cucumber / carrot / pineapple / guacamole / spicy mayo /
+                                        green onion / unagi sauce /
+                                        sesame seeds</div>
+                                    <div class="col-3"><b class="addrHeading">Allergen(s):</b><br /> Soy, sulphites.
+                                    </div>
+                                    <div class="col-6">
+                                        <span>
+                                            <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub-collapseTwo" aria-expanded="false"
-                                    aria-controls="sub-collapseTwo">
-                                    Sausage Breakfast Sandwich
-                                </button>
-                            </h2>
-                            <div id="sub-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="sub-headingTwo" data-bs-parent="#collapseOne">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about Sausage Breakfast Sandwich
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="sub2-headingTwo">
+                            <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sub2-collapseTwo" aria-expanded="false"
+                                aria-controls="sub2-collapseTwo">
+                                Coastal<span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/GlutenFree.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/Vegetarian.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/DairyFree.png" /></span>
+                            </button>
+                        </h2>
+                        <div id="sub2-collapseTwo" class="accordion-collapse collapse" aria-labelledby="sub2-headingTwo"
+                            data-bs-parent="#sub2-outlet-accordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-3"><b class="addrHeading">Local
+                                            Ingredient(s):</b><br />Smoked salmon / yellowfin
+                                        tuna / cucumber / carrot / pineapple / guacamole / spicy mayo /
+                                        green onion / unagi sauce /
+                                        sesame seeds</div>
+                                    <div class="col-3"><b class="addrHeading">Allergen(s):</b><br /> Soy, sulphites.
+                                    </div>
+                                    <div class="col-6">
+                                        <span>
+                                            <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub-collapseThree" aria-expanded="false"
-                                    aria-controls="sub-collapseTwo">
-                                    Fruit Cup
-                                </button>
-                            </h2>
-                            <div id="sub-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="sub-headingThree" data-bs-parent="#collapseOne">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about Fruit Cup
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="sub2-headingThree">
+                            <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sub2-collapseThree" aria-expanded="false"
+                                aria-controls="sub2-collapseTwo">
+                                Tuna<span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/GlutenFree.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/Vegetarian.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/DairyFree.png" /></span>
+                            </button>
+                        </h2>
+                        <div id="sub2-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="sub2-headingThree" data-bs-parent="#sub2-outlet-accordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-3"><b class="addrHeading">Local
+                                            Ingredient(s):</b><br />Smoked salmon / yellowfin
+                                        tuna / cucumber / carrot / pineapple / guacamole / spicy mayo /
+                                        green onion / unagi sauce /
+                                        sesame seeds</div>
+                                    <div class="col-3"><b class="addrHeading">Allergen(s):</b><br /> Soy, sulphites.
+                                    </div>
+                                    <div class="col-6">
+                                        <span>
+                                            <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                        </span>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="sub2-headingFour">
+                            <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sub2-collapseFour" aria-expanded="false"
+                                aria-controls="sub2-collapseTwo">
+                                Chicken<span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/GlutenFree.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/DairyFree.png" /></span>
+                            </button>
+                        </h2>
+                        <div id="sub2-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="sub2-headingThree" data-bs-parent="#sub2-outlet-accordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-3"><b class="addrHeading">Local
+                                            Ingredient(s):</b><br />Smoked salmon / yellowfin
+                                        tuna / cucumber / carrot / pineapple / guacamole / spicy mayo /
+                                        green onion / unagi sauce /
+                                        sesame seeds</div>
+                                    <div class="col-3"><b class="addrHeading">Allergen(s):</b><br /> Soy, sulphites.
+                                    </div>
+                                    <div class="col-6">
+                                        <span>
+                                            <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="sub2-headingThree">
+                            <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sub2-collapseThree" aria-expanded="false"
+                                aria-controls="sub2-collapseTwo">
+                                Veggie<span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/GlutenFree.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/Vegetarian.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/DairyFree.png" /></span>
+                            </button>
+                        </h2>
+                        <div id="sub2-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="sub2-headingThree" data-bs-parent="#sub2-outlet-accordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-3"><b class="addrHeading">Local
+                                            Ingredient(s):</b><br />Smoked salmon / yellowfin
+                                        tuna / cucumber / carrot / pineapple / guacamole / spicy mayo /
+                                        green onion / unagi sauce /
+                                        sesame seeds</div>
+                                    <div class="col-3"><b class="addrHeading">Allergen(s):</b><br /> Soy, sulphites.
+                                    </div>
+                                    <div class="col-6">
+                                        <span>
+                                            <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Salads
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#outlet-accordion">
+            <div class="accordion-body">
+                <div class="accordion" id="sub3-outlet-accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="sub3-menuSection-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sub3-menuCategory-1" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Cobb Salad<span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/GlutenFree.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/Vegetarian.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/DairyFree.png" /></span>
+                            </button>
+                        </h2>
+                        <div id="sub3-menuCategory-1" class="accordion-collapse collapse"
+                            aria-labelledby="sub3-menuSection-1" data-bs-parent="#collapseThree">
+                            <div class="accordion-body">
+                                Local Ingredients( )+ Dietary, Nutritional info about Vegetable
+                                Samosa
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="sub3-headingTwo">
+                            <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sub3-collapseTwo" aria-expanded="false"
+                                aria-controls="sub3-collapseTwo">
+                                Kale Caesar<span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/GlutenFree.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/Vegetarian.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/DairyFree.png" /></span>
+                            </button>
+                        </h2>
+                        <div id="sub3-collapseTwo" class="accordion-collapse collapse" aria-labelledby="sub3-headingTwo"
+                            data-bs-parent="#collapseThree">
+                            <div class="accordion-body">
+                                Local Ingredients( )+ Dietary, Nutritional info about Tater tots
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="sub3-headingThree">
+                            <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sub3-collapseThree" aria-expanded="false"
+                                aria-controls="sub3-collapseTwo">
+                                House Salad<span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/GlutenFree.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/Vegetarian.png" /></span>
+                                <span><img class="img-responsive h-auto w-10"
+                                        src="../images/icons/DairyFree.png" /></span>
+                            </button>
+                        </h2>
+                        <div id="sub3-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="sub3-headingThree" data-bs-parent="#collapseThree">
+                            <div class="accordion-body">
+                                Local Ingredients( )+ Dietary, Nutritional info about Cheese
+                                Burger
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion END -->
+</div>
+
+
+
+
+
+
+<div id="menuCategory-1" class="accordion-collapse collapse" aria-labelledby="menuSection-1"
+    data-bs-parent="#outlet-accordion">
+
+
+    <div class="accordion-body">
+
+
+        <div class="accordion" id="sub-outlet-accordion">
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="sub-menuSection-1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sub-menuCategory-1" aria-expanded="false" aria-controls="menuCategory-1">
+                        Classic Club<span><img class="img-responsive h-auto w-10"
+                                src="../images/icons/GFOptions.png" /></span>
+                        <span><img class="img-responsive h-auto w-10" src="../images/icons/DairyFree.png" /></span>
+                    </button>
+                </h2>
+
+
+                <div id="sub-menuCategory-1" class="accordion-collapse collapse" aria-labelledby="sub-menuSection-1"
+                    data-bs-parent="#menuCategory-1">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-3 h-auto"><b class="addrHeading">Local
+                                    Ingredient(s):</b><br /><br />Turkey / Bacon
+                                /
+                                Cheddar Cheese / Lettuce / Tomato / Garlic Aioli</div>
+                            <div class="col-3 h-auto"><b class="addrHeading">Allergen(s):</b><br /><br /> Wheat,
+                                sulphites,
+                                egg.</div>
+                            <div class="col-6 h-auto mh-45 w-45">
+                                <span>
+                                    <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="sub-headingTwo">
+                    <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sub-collapseTwo" aria-expanded="false" aria-controls="sub-collapseTwo">
+                        Turkey Swiss Wrap<span><img class="img-responsive h-auto w-10 rounded mx-auto"
+                                src="../images/icons/GFOptions.png" /></span>
+                    </button>
+                </h2>
+
+
+
+                <div id="sub-collapseTwo" class="accordion-collapse collapse" aria-labelledby="sub-headingTwo"
+                    data-bs-parent="#menuCategory-1">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-3 h-auto">
+                                <b class="addrHeading">Local Ingredient(s):</b><br /><br />Roasted
+                                Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed
+                                Greens / Spicy Mayo
+                            </div>
+
+                            <div class="col-3 h-auto"><b class="addrHeading">Allergen(s):</b><br /><br /> Wheat,
+                                sulphites,
+                                egg.</div>
+                            <div class="col-6 h-auto mh-45 w-45">
+                                <span>
+                                    <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="sub-headingThree">
+                    <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sub-collapseThree" aria-expanded="false" aria-controls="sub-collapseTwo">
+                        Falafel<span><img class="img-responsive h-auto w-10"
+                                src="../images/icons/GFOptions.png" /></span>
+                        <span><img class="img-responsive h-auto w-10" src="../images/icons/Vegetarian.png" /></span>
+                    </button>
+                </h2>
+                <div id="sub-collapseThree" class="accordion-collapse collapse" aria-labelledby="sub-headingThree"
+                    data-bs-parent="#menuCategory-1">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-3 h-auto"><b class="addrHeading">Local
+                                    Ingredient(s):</b><br /><br />Falafel / Feta / Red Onion /
+                                Cucumber / Mixed Greens / Tomato / Tzatziki</div>
+                            <div class="col-3 h-auto"><b class="addrHeading">Allergen(s):</b><br /><br /> Wheat,
+                                sulphites,
+                                dairy.</div>
+                            <div class="col-6 h-auto mh-45 w-45">
+                                <span>
+                                    <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -62,194 +473,281 @@
             </div>
 
         </div>
-
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    Lunch
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-
-                    <div class="accordion" id="sub2-accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub2-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub2-collapseOne" aria-expanded="true" aria-controls="collapseTwo">
-                                    Poutine
-                                </button>
-                            </h2>
-                            <div id="sub2-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="sub2-headingOne" data-bs-parent="#sub2-accordionExample">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about Poutine
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub2-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub2-collapseTwo" aria-expanded="false"
-                                    aria-controls="sub2-collapseTwo">
-                                    Soup
-                                </button>
-                            </h2>
-                            <div id="sub2-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="sub2-headingTwo" data-bs-parent="#sub2-accordionExample">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about Soup
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub2-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub2-collapseThree" aria-expanded="false"
-                                    aria-controls="sub2-collapseTwo">
-                                    Schnitzel
-                                </button>
-                            </h2>
-                            <div id="sub2-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="sub2-headingThree" data-bs-parent="#sub2-accordionExample">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about Schnitzel
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                    aria-expanded="true" aria-controls="collapseThree">
-                    Grab & Go Snacks
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-
-                    <div class="accordion" id="sub3-accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub3-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub3-collapseOne" aria-expanded="true"
-                                    aria-controls="collapseThree">
-                                    Vegetable Samosa
-                                </button>
-                            </h2>
-                            <div id="sub3-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="sub3-headingOne" data-bs-parent="#collapseThree">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about Vegetable Samosa
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub3-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub3-collapseTwo" aria-expanded="false"
-                                    aria-controls="sub3-collapseTwo">
-                                    Tater tots
-                                </button>
-                            </h2>
-                            <div id="sub3-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="sub3-headingTwo" data-bs-parent="#collapseThree">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about Tater tots
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub3-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub3-collapseThree" aria-expanded="false"
-                                    aria-controls="sub3-collapseTwo">
-                                    Cheese Burger
-                                </button>
-                            </h2>
-                            <div id="sub3-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="sub3-headingThree" data-bs-parent="#collapseThree">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about Cheese Burger
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading4">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
-                    aria-expanded="true" aria-controls="collapse4">
-                    Pastries
-                </button>
-            </h2>
-            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-
-                    <div class="accordion" id="sub4-accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub4-collapseOne" aria-expanded="true" aria-controls="collapse4">
-                                    Carrot Muffin
-                                </button>
-                            </h2>
-                            <div id="sub4-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="sub4-headingOne" data-bs-parent="#collapse4">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about carrot muffin
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub4-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub4-collapseTwo" aria-expanded="false"
-                                    aria-controls="sub4-collapseTwo">
-                                    Apple Turnover
-                                </button>
-                            </h2>
-                            <div id="sub4-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="sub4-headingTwo" data-bs-parent="#collapse4">
-                                <div class="accordion-body">
-                                    Ingredients + Dietary, Nutritional info about apple turnover
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="sub4-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#sub4-collapseThree" aria-expanded="false"
-                                    aria-controls="sub4-collapseTwo">
-                                    Accordion #1 Sub Item #3
-                                </button>
-                            </h2>
-                            <div id="sub4-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="sub4-headingThree" data-bs-parent="#collapse4">
-                                <div class="accordion-body">
-                                    Accordion #1 Sub Item #3
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="menuCategory-1" class="accordion-collapse collapse" aria-labelledby="menuSection-1"
+    data-bs-parent="#outlet-accordion">
+    <div class="accordion-body">
+
+
+        <div class="accordion" id="sub-outlet-accordion">
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="sub-menuSection-1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sub-menuCategory-1" aria-expanded="false" aria-controls="menuCategory-1">
+                        Classic Club<span><img class="img-responsive h-auto w-10"
+                                src="../images/icons/GFOptions.png" /></span>
+                        <span><img class="img-responsive h-auto w-10" src="../images/icons/DairyFree.png" /></span>
+                    </button>
+                </h2>
+
+
+                <div id="sub-menuCategory-1" class="accordion-collapse collapse" aria-labelledby="sub-menuSection-1"
+                    data-bs-parent="#menuCategory-1">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-3 h-auto"><b class="addrHeading">Local
+                                    Ingredient(s):</b><br /><br />Turkey / Bacon
+                                /
+                                Cheddar Cheese / Lettuce / Tomato / Garlic Aioli</div>
+                            <div class="col-3 h-auto"><b class="addrHeading">Allergen(s):</b><br /><br /> Wheat,
+                                sulphites,
+                                egg.</div>
+                            <div class="col-6 h-auto mh-45 w-45">
+                                <span>
+                                    <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="sub-headingTwo">
+                    <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sub-collapseTwo" aria-expanded="false" aria-controls="sub-collapseTwo">
+                        Turkey Swiss Wrap<span><img class="img-responsive h-auto w-10 rounded mx-auto"
+                                src="../images/icons/GFOptions.png" /></span>
+                    </button>
+                </h2>
+
+
+
+                <div id="sub-collapseTwo" class="accordion-collapse collapse" aria-labelledby="sub-headingTwo"
+                    data-bs-parent="#menuCategory-1">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-3 h-auto">
+                                <b class="addrHeading">Local Ingredient(s):</b><br /><br />Roasted
+                                Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed
+                                Greens / Spicy Mayo
+                            </div>
+
+                            <div class="col-3 h-auto"><b class="addrHeading">Allergen(s):</b><br /><br /> Wheat,
+                                sulphites,
+                                egg.</div>
+                            <div class="col-6 h-auto mh-45 w-45">
+                                <span>
+                                    <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="sub-headingThree">
+                    <button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sub-collapseThree" aria-expanded="false" aria-controls="sub-collapseTwo">
+                        Falafel<span><img class="img-responsive h-auto w-10"
+                                src="../images/icons/GFOptions.png" /></span>
+                        <span><img class="img-responsive h-auto w-10" src="../images/icons/Vegetarian.png" /></span>
+                    </button>
+                </h2>
+                <div id="sub-collapseThree" class="accordion-collapse collapse" aria-labelledby="sub-headingThree"
+                    data-bs-parent="#menuCategory-1">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-3 h-auto"><b class="addrHeading">Local
+                                    Ingredient(s):</b><br /><br />Falafel / Feta / Red Onion /
+                                Cucumber / Mixed Greens / Tomato / Tzatziki</div>
+                            <div class="col-3 h-auto"><b class="addrHeading">Allergen(s):</b><br /><br /> Wheat,
+                                sulphites,
+                                dairy.</div>
+                            <div class="col-6 h-auto mh-45 w-45">
+                                <span>
+                                    <img class="img-fluid" src="../images/NutritionLabels/waffles_.jpg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // JS HTML DOM document object is the owner of all other objects in page
+    // .ready() offers a way to run JS code as soon as page's (DOM) becomes safe to manipulate.
+    // Ready Click and Ajax are all functions of jQuery
+
+    /* This function will search the OUTLET SPECIFIC  folder for menu CSV's (maybe these are presets)*/
+    function getMenus() {
+        /* Read names of CSV's into an array.
+            
+            Turns out this needs Node JS installed on the server.*/
+    }
+
+    /* This should be made to await the previous function */
+    function createMenuCategoryArrays() {
+        /* iterate array from getMenus func,
+                Read the data for any errors with the image, or missing data,
+                separate sections into their own arrays
+                https://www.taniarascia.com/how-to-promisify-an-ajax-call/
+            */
+    }
+
+    /**
+     * @param file path
+     */
+    function loadMenus() {
+        //This array will contain all menu items that are parsed from the file
+        const sandwichMenu = [],
+            breakfastMenu = [];
+
+
+        //define variables that will be placeholders for iterated data, as well as static traits,
+        //like the dietary badges
+        var itemName = "Waffles",
+            veganDiet = "../images/icons/Vegan.png",
+            vegetarianDiet = "../images/icons/Vegetarian.png",
+            glutenfreeDiet = "../images/icons/GlutenFree.png",
+            glutenfreeAlt = "../images/icons/GFOptions.png",
+            dairyfreeDiet = "../images/icons/DairyFree.png";
+
+
+        /** Load the CSV data and split it into arrays of data for processing later. */
+        $(document).ready(function () {
+            $.ajax({
+                //This is a SEMICOLON DELIMITED CSV file in the ROOT FOLDER.
+                url: "../files/menus/",
+                //type of data to expect
+                dataType: "text",
+
+                //success will run a function when the pairs above resolve successfully
+                success: function (data) {
+                    // split file into entries by linebreak
+                    var menu_list = data.split(/\r?\n|\r/);
+                    const menu_dataset = [];
+
+                    //loop to iterate through the length of the array
+                    for (var counter = 0; counter < menu_list.length; counter++) {
+                        /* Split the menu_list into entries. This is
+                                        another Array containing the information for one supplier.*/
+
+                        if (counter === 0 || menu_list[counter] === "") {
+                            //SKIP HEADERS or EMPTY LEADING CELLS.
+                            continue;
+                        }
+
+                        completeMenu.push(menu_list[counter].split(";"));
+                        //the array of our formatted suppliers, ready to write data to new arrays.
+                    }
+                    //UNCOMMENT FOR DEBUG - logs the lumped data that is gathered 
+                    console.log(
+                        "Logging sandwichMenu variable after split: " + sandwichMenu
+                    );
+                    // logs out data from file as a table in the console - table formats the data.
+                    //we don't save in this format
+                    console.table(sandwichMenu);
+
+
+
+                },
+            });
+            $.ajax({
+                //This is a SEMICOLON DELIMITED CSV file in the ROOT FOLDER.
+                url: "./files/menus/green_mountain/breakfast_greenmountain.csv",
+                //type of data to expect
+                dataType: "text",
+
+                //success will run a function when the pairs above resolve successfully
+                success: function (data) {
+                    // split file into entries by linebreak
+                    var menu_list = data.split(/\r?\n|\r/);
+                    const menu_dataset = [];
+
+                    //loop to iterate through the length of the array
+                    for (var counter = 0; counter < menu_list.length; counter++) {
+                        /* Split the menu_list into entries. This is
+                                        another Array containing the information for one supplier.*/
+
+                        if (counter === 0 || menu_list[counter] === "") {
+                            //SKIP HEADERS or EMPTY LEADING CELLS.
+                            continue;
+                        }
+
+                        breakfastMenu.push(menu_list[counter].split(";"));
+                        //the array of our formatted suppliers, ready to write data to new arrays.
+                    }
+                    //UNCOMMENT FOR DEBUG - logs the lumped data that is gathered 
+                    console.log(
+                        "Logging breakfastMenu variable after split: " + breakfastMenu
+                    );
+                    // logs out data from file as a table in the console - table formats the data.
+                    //we don't save in this format
+                    console.table(breakfastMenu);
+
+
+
+                },
+            });
+        });
+    }
+
+    loadMenus();
+
+</script>

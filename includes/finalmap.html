@@ -3,7 +3,7 @@
 
         <div id="map"></div>
     </div>
-    <!-- Remember to change YOUR_API_KEY below! -->
+    <!-- TODO: Remember to change YOUR_API_KEY below! -->
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0smwvmgogRz2mVacUsQe-SH_mTrfh8T0&callback=initMap&v=beta&libraries=marker,places."
         async defer></script>
@@ -18,23 +18,36 @@
          */
         function initMap() {
 
-
+            // This is VIU's static location.
             const pointVIU = new google.maps.LatLng(49.15730703858696, -123.96634614426951),
+
+                //This is the center coordinates the map will use.
+                centerpoint = new google.maps.LatLng(49.248426003186886, -123.18937431858002),
+
+                // These values are the coordinate boundaries that this map's viewport will be locked to.
                 boundary_coords = {
-                    /* These values are the coordinate boundaries that this map's viewport will be locked to. */
                     north: 60.5,
                     south: 47.6,
                     west: -134.00588285897737,
                     east: -114.00240135711853,
                 },
                 myOptions = {
-                    zoom: 7.45,
-                    center: pointVIU,
+                    zoom: 8.75,
+                    center: centerpoint,
                     restriction: {
                         latLngBounds: boundary_coords,
                         strictBounds: false,
                     },
+                    /* This is the ID that we use to associate our map styles with our 
+                    Google Cloud Platform account. This is where APIs, maps and styling can be managed.*/
                     mapId: "d05c27659b89fe15",
+
+                    /* This will limit / alter the controls available on the map interface.
+                    TODO: The map has an information link permanently attached to the bottom 
+                    (Google map data, terms/privacy).
+                    
+                    We might want to blacklist this url  - if we think it will be a concern.
+                    So far in testing it has been remarkable to all users.*/
                     streetViewControl: false,
                     mapTypeControl: false,
                     fullscreenControl: true,
@@ -47,6 +60,7 @@
                     },
 
                 },
+                //Write the map into the element, using the options we defined at the beginning of this section.
                 map = new google.maps.Map(document.getElementById("map"), myOptions);
 
             const contentVIU =
@@ -59,9 +73,9 @@
                 '<div class="row gy-2">' +
                 '<div class="col-md-12">' +
 
-                '<div id="bodyContent" class="h-auto w-100">' +
+                '<div class="h-auto w-100 infowindow-body">' +
 
-                `<p class="gy-3 mt-5"><span class="align-middle">\n\nThis is us!\nWe are the final stop on the food's journey.</span></p>` +
+                `<p class="gy-3 mt-5"><span class=" align-middle fw-normal">\n\nThis is us!\nWe are the final stop on the food's journey.</span></p>` +
 
                 '</div>' +
 
@@ -74,7 +88,7 @@
 
 
 
-
+            // This array contains the processed data for the supplier map markers.
             const suppliers = [];
 
             // Create an info window to share between markers.
@@ -113,8 +127,13 @@
             *
             * Welcome to the beginning of this script!
             *
-            * If you have any questions, contact me at the address below.
+            * If you have any questions, contact me at the address below. 
             * @author Ezra Boersma <ezra.boersma@itas.ca>
+            * 
+            * Check Google Maps documentation 
+            * or MDN if you want to know more about anything here.
+            * 
+            * 
                 *
                 * This script is intended to serve the function of allowing the Food Services department (or responsible party) to
                 be able to dynamically
@@ -162,7 +181,7 @@
                 *
                 * - Image Description ( Accessibility Feature : The description of the image that screen readers will use )
                 *
-                *
+                * - Web Link ( This will be for the person updating te page - this will not attach to the marker ) 
                 *
                 * */
 
@@ -171,7 +190,6 @@
             $(document).ready(function () {
                 $.ajax({
                     //This is a SEMICOLON DELIMITED CSV file in the ROOT FOLDER.
-                    //TODO: Nest this to prevent shallow visibility.
                     url: "./files/suppliers/supplier_markers.csv",
 
                     //type of data to expect
@@ -235,7 +253,7 @@
                             var currDataID = title.replace(/[^a-zA-Z0-9]/g, ""); //Strip name of all spaces and characters
                             currDataID =
                                 currDataID.charAt(0) + currDataID.substring(1).toLowerCase();
-                            /*  push this to array for this object */
+                            // Push this to array for this object
                             cell.push(currDataID);
 
                             //This is the grid layout that will be used for each infoWindow when clicked.
@@ -249,16 +267,16 @@
                                 `<h6 id="addrHeading" class="addrHeading">${address}</h6>` + //
                                 '<div class="row">' +
                                 '<div class="col-md-6">' +
-                                `<img src="./images/${imgpath}.jpg" class="map-thumbnail h-auto w-75 rounded mx-auto d-block mt-5" alt="${imgdesc}"></img>` +
+                                `<img src="./images/feedbc/${imgpath}.jpg" class="map-thumbnail h-auto w-75 rounded mx-auto d-block mt-5" alt="${imgdesc}"></img>` +
                                 "</div>" +
                                 '<div class="col-md-6">' +
                                 '<div id="bodyContent" class="h-auto w-100">' +
-                                `<p class="gy-3 mt-5"><span class="align-middle">
+                                `<p class="infowindow-body gy-3 mt-5"><span class="align-middle  fw-normal">
                                     ${description}
+                                    </span>
                                     <br><br><br>
                                     <span class="fw-bold">Local Ingredient(s): ${ingredients}.</span>
-                                    
-                                </span></p>` +
+                                    </p>` +
                                 "</div>" +
                                 "</div>" +
                                 "</div>" +
@@ -285,8 +303,7 @@
                         });
 
                         /* Push elements from arrays into respective containers/functions (some don't need any manipulation - they
-                        simply
-                        need be instantiated */
+                        simply need be instantiated */
 
                         legendArray.forEach((li, s) => {
 
@@ -294,9 +311,8 @@
 
                         })
 
-
-
-                        //DEBUG console.log("Adding onclick to: " + document.getElementById("liVIU"));
+                        /* UNCOMMENT FOR DEBUG 
+                        console.log("Adding onclick to: " + document.getElementById("liVIU"));  */
                         document.getElementById("liVIU").onclick = function () {
 
                             infoWindow.close();
@@ -304,8 +320,6 @@
                             infoWindow.open(faMarkerView.map, faMarkerView);
 
                         };
-
-
 
                         suppliers.forEach((markerdata, marker_count) => {
 
@@ -346,9 +360,13 @@
                                 infoWindow.open(marker.map, marker);
                             };
 
-                            console.log(marker);
+                            /*  UNCOMMENT FOR DEBUG 
+                            console.log(marker); */
+
                             markerArray.push(marker);
-                            console.log(markerArray);
+
+                            /*  UNCOMMENT FOR DEBUG
+                            console.log(markerArray);*/
 
                         })
 
@@ -358,21 +376,13 @@
 
 
             });
-
-
         }
 
         initMap();
 
     </script>
 
-
-    <!--    The `defer` attribute causes the callback to execute after the full HTML
-                          document has been parsed. For non-blocking uses, avoiding race conditions,
-                          and consistent behavior across browsers, consider loading using Promises
-                          with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-                          -->
-
+    <!--    This creates the legend element and populates the list with the first entry - the static VIU marker. -->
 
     <div class="col-lg-3 overflow">
         <ul class="list-group" id="legend">
@@ -383,18 +393,8 @@
             </li>
 
         </ul>
-
-
     </div>
 
-
-
-</div>
-
-<!-- <div class="col-lg-12 w-100 h-100">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1GN9CcqFOMnsRh1ynaaHnNy4QkmWVejc&ehbc=2E312F" width="100%"
-        height="767"></iframe>
-</div> -->
 </div>
 
 
@@ -408,13 +408,3 @@
         </button>
     </div>
 </div>
-
-<div class="col-lg-12">
-
-
-</div>
-
-
-<footer>
-
-</footer>

@@ -33,56 +33,98 @@
             $("#mainpanel").html(result);
           }
         });
-      });
-    });
+      }),
+        /* Calls for the home view to be swapped for the */
+        $("#map_btn").click(function () {
+          $.ajax({
+            url: "./includes/finalmap.html", success: function (result) {
+              $("#mainpanel").html(result);
+            }
+          });
+        }),
 
-    /* Calls for the home view to be swapped for the */
-    $(document).ready(function () {
-      $("#map_btn").click(function () {
+        $("#about_btn_nav").click(function () {
+          $.ajax({
+            url: "./includes/about.html", success: function (result) {
+              $("#mainpanel").html(result),
+                $(".navbar-collapse").removeClass("show");
+            }
+          });
+        }),
+
+        //Outlet Large Button listeners 
+        //Green Mountain
+        $("#menu_btn_greenmountain").click(function () {
+          $.ajax({
+            url: "./includes/outlet-greenmountain.html", success: function (result) {
+              $("#mainpanel").html(result);
+            }
+          });
+        });
+      //The Roost
+      $("#menu_btn_theroost").click(function () {
         $.ajax({
-          url: "./includes/finalmap.html", success: function (result) {
+          url: "./includes/outlet-theroost.html", success: function (result) {
             $("#mainpanel").html(result);
           }
         });
       });
-    });
-
-    $(document).ready(function () {
-      $("#menu_btn").click(function () {
+      // Mount Benson
+      $("#menu_btn_mtbenson").click(function () {
         $.ajax({
-          url: "./includes/outletmenu.html", success: function (result) {
-            $("#mainpanel").html(result),
-              $("#nav-brand").attr("src", "./images/imgassets/site/greenmountain.jpg");
+          url: "./includes/outlet-mtbenson.html", success: function (result) {
+            $("#mainpanel").html(result);
           }
         });
       });
-    });
-
-
-
-    /* Nav button listeners */
-    $(document).ready(function () {
-      $("#menu_btn_nav").click(function () {
+      // Arrowsmith Grill
+      $("#menu_btn_arrowsmith").click(function () {
         $.ajax({
-          url: "./includes/outletmenu.html", success: function (result) {
-            $("#mainpanel").html(result),
-              $(".navbar-collapse").removeClass("show"),
-              $("#nav-brand").attr("src", "./images/imgassets/site/greenmountain.jpg");
+          url: "./includes/outlet-arrowsmith.html", success: function (result) {
+            $("#mainpanel").html(result);
           }
         });
       });
-    });
 
-    $(document).ready(function () {
-      $("#about_btn_nav").click(function () {
+      // Nav button listeners
+      //Green Mountain Nav
+      $("#menu_btn_nav_greenmountain").click(function () {
         $.ajax({
-          url: "./includes/about.html", success: function (result) {
+          url: "./includes/outlet-greenmountain.html", success: function (result) {
+            $("#mainpanel").html(result),
+              $(".navbar-collapse").removeClass("show");
+          }
+        });
+      });
+      //The Roost
+      $("#menu_btn_nav_theroost").click(function () {
+        $.ajax({
+          url: "./includes/outlet-theroost.html", success: function (result) {
+            $("#mainpanel").html(result),
+              $(".navbar-collapse").removeClass("show");
+          }
+        });
+      });
+      // Mount Benson
+      $("#menu_btn_nav_mtbenson").click(function () {
+        $.ajax({
+          url: "./includes/outlet-mtbenson.html", success: function (result) {
+            $("#mainpanel").html(result),
+              $(".navbar-collapse").removeClass("show");
+          }
+        });
+      });
+      // Arrowsmith Grill
+      $("#menu_btn_nav_arrowsmith").click(function () {
+        $.ajax({
+          url: "./includes/outlet-arrowsmith.html", success: function (result) {
             $("#mainpanel").html(result),
               $(".navbar-collapse").removeClass("show");
           }
         });
       });
     });
+
 
   </script>
 
@@ -91,53 +133,45 @@
 
 <body>
   <div class="wrapper">
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-customimg">
-
+    <nav class="navbar navbar-dark bg-customimg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img id="nav-brand" src="./images/navbackground/feedBC.png"
-            alt="Feed BC logo: Bringing BC foods to public institutions" width="12%" height="auto"
-            class="d-inline-block align-text-top">
+        <a href="index.html" class="navbar-brand">
+          <img src="./images/navbackground/feedBC.png" width="16%" height="auto"
+            alt="Feed BC: Bringing BC foods to public institutions">
         </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" aria-expanded="false" id="navBar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="about_btn_nav">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">View Menu</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" id="menu_btn_nav_greenmountain">Green Mountain</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" id="menu_btn_nav_theroost">The Roost</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" id="menu_btn_nav_arrowsmith">Arrowsmith Grill</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" id="menu_btn_nav_mtbenson">Mt. Benson Market</a>
+
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
-        aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-
-      <div class="collapse navbar-collapse" aria-expanded="false" id="navBar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" id="about_btn_nav">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">View Menu</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" id="menu_btn_nav">Green Mountain</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" id="menu_btn_nav">Mt. Benson Market</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" id="menu_btn_nav">The Roost</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" id="menu_btn_nav">Arrowsmith Grill</a>
-
-            </div>
-          </li>
-        </ul>
-      </div>
-
     </nav>
+
+
 
     <div class="jumbotron h-100 jumbotron-fluid bg-dark" align="center">
 
@@ -151,16 +185,19 @@
         <div class="row gy-5 gx-5 pb-5" id="btn_body">
           <h1 class="pt-5" id="navbanner">Explore VIU Food Service Options</h1>
           <div class="col-lg-3">
-            <button type="button" id="menu_btn" class="btn btn-primary btn-lg btn-lg1 p-4">Green Mountain</button>
+            <button type="button" id="menu_btn_greenmountain" class="btn btn-primary btn-lg btn-lg1 p-4">Green
+              Mountain</button>
           </div>
           <div class="col-lg-3">
-            <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">The Roost</button>
+            <button type="button" id="menu_btn_theroost" class="btn btn-primary btn-lg btn-lg1 p-4">The Roost</button>
           </div>
           <div class="col-lg-3">
-            <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">Arrowsmith Grill</button>
+            <button type="button" id="menu_btn_arrowsmith" class="btn btn-primary btn-lg btn-lg1 p-4">Arrowsmith
+              Grill</button>
           </div>
           <div class="col-lg-3">
-            <button type="button" class="btn btn-primary btn-lg btn-lg1 p-4">Mt. Benson Market</button>
+            <button type="button" id="menu_btn_mtbenson" class="btn btn-primary btn-lg btn-lg1 p-4">Mt. Benson
+              Market</button>
           </div>
 
         </div>
