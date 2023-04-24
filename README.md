@@ -1,4 +1,4 @@
-# ezrab_feedbc
+# ezrab_feedbc Project Brain Food
 
 Feed BC is a provincial government partnership initiative led by the Ministry of Agriculture and Food, to increase B.C. food in hospitals, residential care facilities, public post-secondary institutions, and other government-supported facilities.
 
