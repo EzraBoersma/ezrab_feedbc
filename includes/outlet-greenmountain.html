@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-12 h-auto">
-        <img src="../images/imgassets/site/grnmountiain.svg" class="pb-3 w-25 h-auto"></img>
+        <img src="../images/imgassets/site/greenmountain.png" class="pb-3 w-25 h-auto"></img>
         <!--         <h1 align="left">Green Mountain</h1> -->
         <!--         <h4>
             Find the bite that's right for you! Discover food service offerings that
@@ -85,7 +85,7 @@
     // .ready() offers a way to run JS code as soon as page's (DOM) becomes safe to manipulate.
     // Ready Click and Ajax are all functions of jQuery
     let completeMenu = [];
-    const menuCategories = ["Sandwiches", "Poke Bowls", "Salads"];
+
     var sandwichMenu, pokebowlMenu, saladMenu;
     function generateAccordionItems(menuData, category) {
         let nestedAccordionItems = "";
@@ -93,7 +93,7 @@
 
         if (category === "Sandwiches") {
             index = 0;
-        } else if (category === "PokeBowls") {
+        } else if (category === "Poke Bowls") {
             index = 1;
         } else if (category === "Salads") {
             index = 2;
@@ -101,16 +101,23 @@
             index = "Placeholder";
         }
 
+
+
         menuData.forEach((item, nestedIndex) => {
+
+            category = category.replace(/\s+/g, '');
+
+
+
             // Generate the nested accordion item content
             const itemContent = `
-<div class="accordion-item">
-    <h2 class="accordion-header" id="sub-menuSection${nestedIndex}">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#sub-menuCategory${nestedIndex}" aria-expanded="false"
-            aria-controls="sub-menuCategory${nestedIndex}">
-      ${item.ItemName}
-      ${item.Diet.split(',').sort().reverse().map(diet => {
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="sub-menuSection${category}${nestedIndex}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sub-menuCategory${category}${nestedIndex}" aria-expanded="false"
+            aria-controls="sub-menuCategory${category}${nestedIndex}">
+            ${item.ItemName}
+            ${item.Diet.split(',').sort().reverse().map(diet => {
                 switch (diet.trim().toUpperCase()) {
                     case 'BC':
                         return '<span class="local-icon"></span>';
@@ -128,32 +135,31 @@
                         return '';
                 }
             }).join('')}
-    </button>
-    </h2>
-    <div id="sub-menuCategory${nestedIndex}" class="accordion-collapse collapse"
-        aria-labelledby="sub-menuSection${nestedIndex}" data-bs-parent="#menuCategory${index}">
-        <div class="accordion-body">
+          </button>
+        </h2>
+        <div id="sub-menuCategory${category}${nestedIndex}" class="accordion-collapse collapse"
+          aria-labelledby="sub-menuSection${category}${nestedIndex}" data-bs-parent="#menuCategory${index}">
+          <div class="accordion-body">
             <div class="row">
-                <div class="col-12 col-md-3 h-auto"><b class="addrHeading">Ingredients:</b><br />${item.Ingredients}<br /><br />
-<b class="addrHeading" text-align="left" style="color: #416700 !important;">
-  <img class="img-responsive h-auto w-2" src="../images/imgassets/icons/Localfood.png" />
-  Local Ingredient(s):
-</b><br />
-<ul style="list-style-position: inside; text-align: center;">
-  ${item.LocalIngredients.split(',').map(ingredient => `
-    <li style="text-align: center;">${ingredient.trim()}</li>
-  `).join('')}
-</ul>
-                </div>
-                <div class="col-12 col-md-3 h-auto"><p class="mt-2"><b class="addrHeading">Allergen(s):</b><br />${item.Allergens}</p></div>
-                <div class="col-12 col-md-6 h-auto mh-45"><span><img class="img-fluid"
-                            src="../images/NutritionLabels/${item.nutritionLabel}.jpg" /></span></div>
+              <div class="col-12 col-md-3 h-auto"><b class="addrHeading">Ingredients:</b><br />${item.Ingredients}<br /><br />
+                <b class="addrHeading" text-align="left" style="color: #416700 !important;">
+                  <img class="img-responsive h-auto w-2" src="../images/imgassets/icons/Localfood.png" />
+                  Local Ingredient(s):
+                </b><br />
+                <ul style="list-style-position: inside; text-align: center;">
+                  ${item.LocalIngredients.split(',').map(ingredient => `
+                    <li style="text-align: center;">${ingredient.trim()}</li>
+                  `).join('')}
+                </ul>
+              </div>
+              <div class="col-12 col-md-3 h-auto"><p class="mt-2"><b class="addrHeading">Allergen(s):</b><br />${item.Allergens}</p></div>
+              <div class="col-12 col-md-6 h-auto mh-45"><span><img class="img-fluid"
+                    src="../images/NutritionLabels/${item.nutritionLabel}.jpg" /></span></div>
             </div>
-            
+          </div>
         </div>
-    </div>
-</div>
-`;
+      </div>
+    `;
 
             nestedAccordionItems += itemContent;
         });
@@ -322,7 +328,7 @@
                 dataType: "text",
                 success: function (data) {
 
-                    const category = "PokeBowls";
+                    const category = "Poke Bowls";
                     console.log("This is the raw data: " + data);
                     // Process the data and assign it to completeMenu
                     // Split CSV data into rows
