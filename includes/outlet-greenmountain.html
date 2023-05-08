@@ -105,17 +105,18 @@
 
         menuData.forEach((item, nestedIndex) => {
 
-            category = category.replace(/\s+/g, '');
+            //create a trimmed version of the category name to serve as a category identifier for HTML elements
+            let categorytrim = category.replace(/\s+/g, '');
 
 
 
             // Generate the nested accordion item content
             const itemContent = `
       <div class="accordion-item">
-        <h2 class="accordion-header" id="sub-menuSection${category}${nestedIndex}">
+        <h2 class="accordion-header" id="sub-menuSection${categorytrim}${nestedIndex}">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#sub-menuCategory${category}${nestedIndex}" aria-expanded="false"
-            aria-controls="sub-menuCategory${category}${nestedIndex}">
+            data-bs-target="#sub-menuCategory${categorytrim}${nestedIndex}" aria-expanded="false"
+            aria-controls="sub-menuCategory${categorytrim}${nestedIndex}">
             ${item.ItemName}
             ${item.Diet.split(',').sort().reverse().map(diet => {
                 switch (diet.trim().toUpperCase()) {
@@ -137,8 +138,8 @@
             }).join('')}
           </button>
         </h2>
-        <div id="sub-menuCategory${category}${nestedIndex}" class="accordion-collapse collapse"
-          aria-labelledby="sub-menuSection${category}${nestedIndex}" data-bs-parent="#menuCategory${index}">
+        <div id="sub-menuCategory${categorytrim}${nestedIndex}" class="accordion-collapse collapse"
+          aria-labelledby="sub-menuSection${categorytrim}${nestedIndex}" data-bs-parent="#menuCategory${index}">
           <div class="accordion-body">
             <div class="row">
               <div class="col-12 col-md-3 h-auto"><b class="addrHeading">Ingredients:</b><br />${item.Ingredients}<br /><br />
