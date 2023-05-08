@@ -1,4 +1,6 @@
-<div class="row gy-5 gx-5 pb-5 pt-5 mapbox">
+<div class="row gx-2 pb-5 mapbox">
+    <!--make h5 later-->
+
     <div class="col-lg-9">
 
         <div id="map"></div>
@@ -75,7 +77,7 @@
 
                 '<div class="h-auto w-100 infowindow-body">' +
 
-                `<p class="gy-3 mt-5"><span class=" align-middle fw-normal">\n\nThis is us!\nWe are the final stop on the food's journey.</span></p>` +
+                `<p class="gy-3 mt-5"><span class=" align-middle fw-normal">\n\nThis is us!\n We are the final stop on the food's journey. <br /><br />We are proud to work with our local suppliers to continue to build relationships and grow BC agriculture together.</span></p>` +
 
                 '</div>' +
 
@@ -261,28 +263,30 @@
                                 '<div id="content" class="container1">' +
                                 '<div id="siteNotice">' +
                                 "</div>" +
-                                '<div class="row mb-3">' +
+                                '<div class="row mb-1">' +
                                 '<div class="col-lg-12">' +
                                 `<h1 id="firstHeading" class="firstHeading mt-1">${title}</h1>` + //
                                 `<h6 id="addrHeading" class="addrHeading">${address}</h6>` + //
                                 '<div class="row">' +
-                                '<div class="col-md-6">' +
+                                '<div class="col-md-6 infowindowcol-1">' +
                                 `<img src="./images/feedbc/${imgpath}.jpg" class="map-thumbnail h-auto w-75 rounded mx-auto d-block mt-5" alt="${imgdesc}"></img>` +
                                 "</div>" +
-                                '<div class="col-md-6">' +
+                                '<div class="col-md-6 infowindowcol-2">' +
                                 '<div id="bodyContent" class="h-auto w-100">' +
-                                `<p class="infowindow-body gy-3 mt-5"><span class="align-middle  fw-normal">
+                                `<p class="infowindow-body gy-3 mt-5"><span class="align-middle fw-normal">
                                     ${description}
                                     </span>
                                     <br><br><br>
-                                    <span class="fw-bold">Local Ingredient(s): ${ingredients}.</span>
+                                    <span class="fw-bold"><img
+                                                            class="img-responsive h-auto w-2"
+                                                            src="../images/icons/Localfood.png" /> Local Ingredient(s): ${ingredients}.</span>
                                     </p>` +
                                 "</div>" +
                                 "</div>" +
                                 "</div>" +
                                 "</div>" +
                                 "</div>";
-                            ("</div>");
+                            "</div>";
 
                             console.log(contentString);
                             stringArray.push(contentString);

@@ -75,7 +75,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #616D91;
   --bs-body-secndcolor: #0085ca;
-  --bs-body-bg: #d9e3f1;
+  --bs-body-bg: #1a1e21;
   --bs-border-width: 0;
   --bs-border-style: solid;
   --bs-border-color: rgba(55, 94, 148, 0.1);
@@ -8406,8 +8406,24 @@ fieldset:disabled .btn {
   --bs-border-opacity: 1;
 }
 
+.w-2 {
+  width: calc(1rem + 0.25vw) !important;
+}
+
+.w-6 {
+  width: calc(2rem + 0.2vw) !important;
+}
+
+.w-8 {
+  width: calc(3rem + 0.2vw) !important;
+}
+
 .w-10 {
   width: calc(4rem + 0.2vw) !important;
+}
+
+.w-12 {
+  width: calc(10rem + 1vw) !important;
 }
 
 .w-16 {
@@ -13703,7 +13719,7 @@ th {
 
 #menuaccordion {
   max-height: 55vh;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 #legend {
@@ -13717,7 +13733,16 @@ th {
 
 }
 
+html {
+  scrollbar-width: thin !important;
+}
+
 .legend-heading {}
+
+
+.infowincol-2 {
+  text-overflow: scroll;
+}
 
 /* This will alter infoWindow layout  */
 
@@ -13733,16 +13758,21 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-y: auto;
+  overflow-x: clip;
+  z-index: 999;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .wrapper {
   height: 100%;
+
 }
 
 #mainpanel {
   min-height: 50%;
-  max-height: 80vh;
   margin-top: 15vh;
   padding-bottom: 3vh;
   padding-top: 2vh;
@@ -13811,8 +13841,8 @@ img {
   height: 100%;
   opacity: 0.5;
   background-size: cover;
-  overflow-y: hidden;
-  background-image: url('../images/navbackground/lg-navbg.jpg');
+  overflow: clip;
+  background-image: url('../images/imgassets/navbackground/lg-navbg.jpg');
 
 }
 
@@ -13834,6 +13864,7 @@ img {
 .footer {
   font-size: 0.75rem;
   z-index: 1;
+
 }
 
 /* Custom sizing for legend items (suppliers) */
@@ -13868,22 +13899,116 @@ img {
 
 .about {
   height: 48vh !important;
-  overflow-y: auto scroll;
+  overflow-y: scroll;
+  overflow-x: clip;
 }
 
-/* This is just a rough idea of what we want for the actual idon class styling */
-.dieticon {
+.infowindowcol-2 {}
+
+/*------------------ Custom dietary icons  --------------*/
+
+.localfood_icon {
+
+  font-size: calc(.75rem + 0.2vw) !important;
+}
+
+
+
+.vegetarian-icon {
+  display: inline-block;
+  /* Ensures the icon behaves like an inline element */
+  width: 1.5em;
+  /* Set the desired width of the icon */
+  height: 1.5em;
+  /* Set the desired height of the icon */
+  background-image: url("../images/imgassets/icons/Vegetarian.png");
+  /* Specify the path to your custom icon image */
+  background-size: cover;
+  /* Scale the image to cover the entire icon container */
+  /* Add any additional styling or positioning properties as needed */
+}
+
+.vegan-icon {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
-  vertical-align: middle;
-  background-image: var(--bs-navbar-toggler-icon-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background-image: url("../images/imgassets/icons/Vegan.png");
+  background-size: cover;
 }
 
+.dairyfree-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("../../images/imgassets/icons/DairyFree.png");
+  background-size: cover;
+}
+
+.glutenfree-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("../../images/imgassets/icons/GlutenFree.png");
+  background-size: cover;
+}
+
+.gfoptions-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("../../images/imgassets/icons/GFOptions.png");
+  background-size: cover;
+}
+
+.local-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("../../images/imgassets/icons/Localfood.png");
+  background-size: cover;
+}
+
+
+
 /* ********** Media Queries for mobile device layouts ********** */
+
+/* Small devices */
+@media (max-width: 766px) {
+  .nav-link {
+    font-size: calc(1.4rem + 0.5vw);
+
+  }
+
+  #btn_body {
+    padding-bottom: 0rem !important;
+  }
+
+  .localfood_column {
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+  }
+
+  #mapbanner {
+    font-size: calc(.75rem + 0.2vw) !important;
+  }
+
+  .container>h3 {
+    font-size: calc(.75rem + 0.3vw) !important;
+  }
+
+}
+
+.jumbotron .container {
+
+  padding: 2% !important;
+}
+
+.col-md-6 img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 /* This will alter infoWindow layout when we break out into the horizontal layout. */
 
@@ -13930,11 +14055,7 @@ img {
     overflow-y: scroll !important;
   }
 
-  #mainpanel {
-    margin-top: 14vh;
 
-
-  }
 
   #btn_row2 {
     margin-top: 1rem !important;
@@ -13947,13 +14068,14 @@ img {
 
   #navbanner {
     font-size: calc(1rem + 0.5vw);
-    margin-top: 4vh;
 
   }
 
   .mapbox {
     padding-bottom: 0 !important;
   }
+
+
 
 }
 
@@ -13969,8 +14091,7 @@ img {
   #btn_row2 {
     margin-left: 8rem;
     margin-right: 8rem;
-    margin-top: 0;
-    overflow-y: auto;
+    margin-top: 2;
 
   }
 

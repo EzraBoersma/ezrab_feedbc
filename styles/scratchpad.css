@@ -44,7 +44,7 @@
     }
 
     .row>* {
-        margin-top: 0.5rem;
+        margin-top: 0.5rem !important;
         /*TODO: avoid creating content scroll on mobile */
     }
 

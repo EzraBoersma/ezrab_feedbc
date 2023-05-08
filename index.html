@@ -24,7 +24,10 @@
 
   <script>
     /* These are the code segments that will dynamically swap the content of the mainpanel element,
-    to display the selected resources. */
+    to display the selected resources. 
+
+    You can add pages by creating new sections and pointing to the URL of your page. 
+    Be sure to add links to the navigation bar.*/
 
     $(document).ready(function () {
       $("#order_btn").click(function () {
@@ -34,7 +37,7 @@
           }
         });
       }),
-        /* Calls for the home view to be swapped for the */
+        /* Calls for the home view to be swapped for the map file.*/
         $("#map_btn").click(function () {
           $.ajax({
             url: "./includes/finalmap.html", success: function (result) {
@@ -48,6 +51,15 @@
             url: "./includes/about.html", success: function (result) {
               $("#mainpanel").html(result),
                 $(".navbar-collapse").removeClass("show");
+            }
+          });
+        }),
+        $("#about_btn").click(function () {
+          $.ajax({
+            url: "./includes/about.html", success: function (result) {
+              $("#mainpanel").html(result),
+                $(".navbar-collapse").removeClass("show");
+              document.getElementById("about_btn").href = "index.html";
             }
           });
         }),
@@ -135,8 +147,8 @@
   <div class="wrapper">
     <nav class="navbar navbar-dark bg-customimg">
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">
-          <img src="./images/navbackground/feedBC.png" width="16%" height="auto"
+        <a id="about_btn" class="navbar-brand nav-link">
+          <img src="./images/imgassets/site/feedBC.png" class="w-12" height="auto"
             alt="Feed BC: Bringing BC foods to public institutions">
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
@@ -150,7 +162,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="about_btn_nav">About</a>
+              <a class="nav-link" id="about_btn_nav">Learn More</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
@@ -173,7 +185,7 @@
 
 
 
-    <div class="jumbotron h-100 jumbotron-fluid bg-dark" align="center">
+    <div class="jumbotron h-100 jumbotron-fluid bg-dark " align="center">
 
       <div class="jumbotron-background blur">
       </div>
@@ -182,8 +194,8 @@
 
 
 
-        <div class="row gy-5 gx-5 pb-5" id="btn_body">
-          <h1 class="pt-5" id="navbanner">Explore VIU Food Service Options</h1>
+        <div class="row gy-5 gx-5 pb-5 mt-1" id="btn_body">
+          <h1 id="navbanner">Explore VIU Food Service Options</h1>
           <div class="col-lg-3">
             <button type="button" id="menu_btn_greenmountain" class="btn btn-primary btn-lg btn-lg1 p-4">Green
               Mountain</button>
@@ -214,25 +226,52 @@
             </button>
           </div>
         </div>
+        <div class="row mt-4 pt-4 localfood_column">
+
+          <div class="col-4 h-auto" align="right">
+            <img src="./images/imgassets/icons/Localfood.png" class="pb-3 w-6 h-auto"></img>
+
+          </div>
+          <div class="col-6">
+
+
+            <h5 class="mt-2 fs-5 fw-light localfood_icon" align="left">
+
+              Look for this icon to find menu items that are made with locally sourced products. View the Food Map
+              to meet our suppliers!
+
+            </h5>
+
+          </div>
+
+        </div>
+
+
 
       </div>
       <!-- /.close mainpanel dynamic container -->
 
 
+
+
     </div>
 
-    <div class="fixed-bottom footer" align="center">
-      <span class="mb-3 mb-md-0 text-muted"> Vancouver Island University Food Services<br /> Made by Ezra
-        Boersma.
-      </span>
-    </div>
+
+
+
 
     <!-- /.close jumbotron -->
   </div>
 
+  </div>
+  <div class="container">
+    <footer class="mt-3 py-1 my-4">
 
+      <p class="text-center text-muted footer">© Vancouver Island University Food Services<br /> Made by Ezra
+        Boersma.</p>
+    </footer>
 
-  <!--./close Wrapper -->
+    <!--./close Wrapper -->
   </div>
 
 
