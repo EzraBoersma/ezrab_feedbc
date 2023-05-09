@@ -205,33 +205,26 @@
                     const category = "Sandwiches";
 
 
-                    console.log("This is the raw data: " + data);
 
 
                     // Split CSV data into rows and remove trailing semicolons
                     const rows = data.split('\n').map(row => row.replace(/;$/, ''))
 
 
-                    console.log("These are the split rows: " + rows);
-                    console.log("These are the headers (row0): " + rows[0]);
 
                     const firstRow = rows[0] + ";"; // add semicolon to end of first row
 
-                    console.log("We have to log firstRow after adding semicolon: " + firstRow);
                     const headers = firstRow.split(';'); // split the string into an array using semicolon as delimiter
 
 
-                    console.log("These are the split headers: " + headers);
                     headers[headers.length - 1] = headers[headers.length - 1].replace(/"/g, '');
 
-                    console.log("These are the split headers: " + headers[headers.length - 1]);
 
                     // Convert CSV data to JSON
                     const jsonData = [];
                     for (let i = 1; i < rows.length - 1; i++) {
                         const columns = rows[i].split(';');
 
-                        console.log("These are the split columns(;): " + columns);
                         const rowObject = {};
 
                         for (let j = 0; j < headers.length; j++) {
@@ -267,7 +260,7 @@
                             //We are allowing these cells to be empty, 
                             //but we want to assign specific placeholder values to each.
                             if (j === 2 && rowObject[columnValue[j]] === "") {
-                                columnValue = "No known priority allergens."; // Use empty string if cell is empty
+                                columnValue = "Currently unavailable"; // Use empty string if cell is empty
                                 rowObject[headers[j]] = columnValue;
 
                                 break;
@@ -282,6 +275,12 @@
 
                                     case 3:
                                         // Code to execute when dietary info is empty.
+                                        columnValue = "NA"; // Use empty string if cell is empty
+                                        rowObject[headers[j]] = columnValue;
+                                        break;
+
+                                    case 4:
+                                        // Code to execute when localingredients info is empty.
                                         columnValue = "NA"; // Use empty string if cell is empty
                                         rowObject[headers[j]] = columnValue;
                                         break;
@@ -301,11 +300,9 @@
                             // Remove any "\r" characters from the columnValue
                             columnValue = columnValue.replace(/\r/g, "");
 
-                            console.log(`ColumnValue without return: ${columnValue}`);
 
                             rowObject[headers[j]] = columnValue;
 
-                            console.log(`ColumnValue without return: ${rowObject[headers[j]]}`);
 
                             if (columnValue.trim() === "") {
                                 alert(`Empty cell found in '${category} Menu, at ${rowObject[headers[0]]}', row ${i + 1}, column ${j + 1}`);
@@ -318,7 +315,6 @@
                     console.log(sandwichMenu);
                     completeMenu.length = 0;
                     completeMenu.push(generateAccordionItems(sandwichMenu, category));
-                    console.log(`We just pushed Sandwiches to COMPLETE menu:  ${completeMenu}`);
 
 
                 },
@@ -331,32 +327,25 @@
                 success: function (data) {
 
                     const category = "Poke Bowls";
-                    console.log("This is the raw data: " + data);
                     // Process the data and assign it to completeMenu
                     // Split CSV data into rows
                     const rows = data.split('\n');
 
 
-                    console.log("These are the split rows: " + rows);
-                    console.log("These are the headers (row0): " + rows[0]);
 
                     const firstRow = rows[0] + ";"; // add semicolon to end of first row
 
-                    console.log("We have to log firstRow after adding semicolon: " + firstRow);
                     const headers = firstRow.split(';'); // split the string into an array using semicolon as delimiter
 
 
-                    console.log("These are the split headers: " + headers);
                     headers[headers.length - 1] = headers[headers.length - 1].replace(/"/g, '');
 
-                    console.log("These are the split headers: " + headers[headers.length - 1]);
 
                     // Convert CSV data to JSON
                     const jsonData = [];
                     for (let i = 1; i < rows.length - 1; i++) {
                         const columns = rows[i].split(';');
 
-                        console.log("These are the split columns(;): " + columns);
                         const rowObject = {};
 
                         for (let j = 0; j < headers.length; j++) {
@@ -392,7 +381,7 @@
                             //We are allowing these cells to be empty, 
                             //but we want to assign specific placeholder values to each.
                             if (j === 2 && rowObject[columnValue[j]] === "") {
-                                columnValue = "No known priority allergens."; // Use empty string if cell is empty
+                                columnValue = "Currently unavailable"; // Use empty string if cell is empty
                                 rowObject[headers[j]] = columnValue;
 
                                 break;
@@ -407,6 +396,12 @@
 
                                     case 3:
                                         // Code to execute when dietary info is empty.
+                                        columnValue = "NA"; // Use empty string if cell is empty
+                                        rowObject[headers[j]] = columnValue;
+                                        break;
+
+                                    case 4:
+                                        // Code to execute when localingredients info is empty.
                                         columnValue = "NA"; // Use empty string if cell is empty
                                         rowObject[headers[j]] = columnValue;
                                         break;
@@ -426,11 +421,9 @@
                             // Remove any "\r" characters from the columnValue
                             columnValue = columnValue.replace(/\r/g, "");
 
-                            console.log(`ColumnValue without return: ${columnValue}`);
 
                             rowObject[headers[j]] = columnValue;
 
-                            console.log(`ColumnValue without return: ${rowObject[headers[j]]}`);
 
                             if (columnValue.trim() === "") {
                                 alert(`Empty cell found in '${category} Menu, at ${rowObject[headers[0]]}', row ${i + 1}, column ${j + 1}`);
@@ -454,32 +447,25 @@
 
                     const category = "Salads";
                     // Process the data and assign it to completeMenu
-                    console.log("This is the raw data: " + data);
                     // Process the data and assign it to completeMenu
                     // Split CSV data into rows
                     const rows = data.split('\n');
 
 
-                    console.log("These are the split rows: " + rows);
-                    console.log("These are the headers (row0): " + rows[0]);
 
                     const firstRow = rows[0] + ";"; // add semicolon to end of first row
 
-                    console.log("We have to log firstRow after adding semicolon: " + firstRow);
                     const headers = firstRow.split(';'); // split the string into an array using semicolon as delimiter
 
 
-                    console.log("These are the split headers: " + headers);
                     headers[headers.length - 1] = headers[headers.length - 1].replace(/"/g, '');
 
-                    console.log("These are the split headers: " + headers[headers.length - 1]);
 
                     // Convert CSV data to JSON
                     const jsonData = [];
                     for (let i = 1; i < rows.length - 1; i++) {
                         const columns = rows[i].split(';');
 
-                        console.log("These are the split columns(;): " + columns);
                         const rowObject = {};
 
                         for (let j = 0; j < headers.length; j++) {
@@ -515,12 +501,11 @@
                             //We are allowing these cells to be empty, 
                             //but we want to assign specific placeholder values to each.
                             if (j === 2 && rowObject[columnValue[j]] === "") {
-                                columnValue = "No known priority allergens."; // Use empty string if cell is empty
+                                columnValue = "Currently unavailable"; // Use empty string if cell is empty
                                 rowObject[headers[j]] = columnValue;
 
                                 break;
                                 // break here because we need to alert for this column
-
 
                             }
 
@@ -530,6 +515,12 @@
 
                                     case 3:
                                         // Code to execute when dietary info is empty.
+                                        columnValue = "NA"; // Use empty string if cell is empty
+                                        rowObject[headers[j]] = columnValue;
+                                        break;
+
+                                    case 4:
+                                        // Code to execute when localingredients info is empty.
                                         columnValue = "NA"; // Use empty string if cell is empty
                                         rowObject[headers[j]] = columnValue;
                                         break;
@@ -548,11 +539,9 @@
                             // Remove any "\r" characters from the columnValue
                             columnValue = columnValue.replace(/\r/g, "");
 
-                            console.log(`ColumnValue without return: ${columnValue}`);
 
                             rowObject[headers[j]] = columnValue;
 
-                            console.log(`ColumnValue without return: ${rowObject[headers[j]]}`);
 
                             if (columnValue.trim() === "") {
                                 alert(`Empty cell found in '${category} Menu, at ${rowObject[headers[0]]}', row ${i + 1}, column ${j + 1}`);

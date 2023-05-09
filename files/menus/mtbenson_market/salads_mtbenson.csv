@@ -1,4 +1,4 @@
-﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel
-Cobb Salad;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;waffles
-Kale Caesar;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;waffles
-House Salad;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;;Potato;VGN, GF, DF;waffles
+﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
+Cobb Salad;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;waffles;
+Kale Caesar;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;waffles;
+House Salad;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;Potato;VGN, GF, DF;waffles;

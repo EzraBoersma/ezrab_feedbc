@@ -1,0 +1,9 @@
+﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
+Bacon Breakfast Burrito;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;Egg, Sausage;GFO;waffles;
+Sausage Breakfast Burrito;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;Dairy, wheat, sulphites, egg.;Egg, Sausage;GFO;waffles;
+Veggie Breakfast Burrito;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;Dairy, wheat, sulphites, egg.;Egg;VGN, GFO;waffles;
+Breakfast Special;Eggs / Bacon or Sausage / Tater Tots / Croissant;Dairy, wheat, sulphites, egg.;Egg, Sausage;BC;waffles;
+Vegetarian Breakfast Special;Eggs / Vegan Sausage / Tater Tots / Croissant;Dairy, wheat, sulphites, egg.;Egg;VEG, BC;waffles;
+Lumberjack Bowl;Tater Tots / Sausage + Bacon or Vegan Sausage / Cheddar Cheese / Diced Tomato / Green Onion / Hollandaise;Dairy, wheat, sulphites, egg.;Tomato, Green Onion;BC;waffles;
+Vegetarian Lumberjack Bowl;Tater Tots / Vegan Sausage / Cheddar Cheese / Diced Tomato / Green Onion / Hollandaise;Dairy, wheat, sulphites, egg.;Tomato, Green Onion;VEG, BC;waffles;
+Brekfast Waffles;Waffles / Berry Compote / Whipped Cream;Dairy, wheat, egg.;NA;VEG;waffles;
