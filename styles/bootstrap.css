@@ -12760,7 +12760,7 @@ fieldset:disabled .btn {
   }
 
   .gap-xxl-5 {
-    media gap: 3rem !important;
+    gap: 3rem !important;
   }
 
   .text-xxl-start {
@@ -13737,7 +13737,7 @@ html {
   scrollbar-width: thin !important;
 }
 
-.legend-heading {}
+
 
 
 .infowincol-2 {
@@ -13903,7 +13903,7 @@ img {
   overflow-x: clip;
 }
 
-.infowindowcol-2 {}
+
 
 /*------------------ Custom dietary icons  --------------*/
 
@@ -13972,6 +13972,19 @@ img {
 
 /* ********** Media Queries for mobile device layouts ********** */
 
+
+/* This will alter infoWindow layout when we break out into the horizontal layout. */
+
+@media(min-width: 767px) {
+
+  #bodyContent {
+    padding-right: 2.5rem;
+  }
+
+
+}
+
+
 /* Small devices */
 @media (max-width: 766px) {
   .nav-link {
@@ -13996,30 +14009,27 @@ img {
     font-size: calc(.75rem + 0.3vw) !important;
   }
 
-}
+  #mainpanel {
+    margin-top: 11vh !important;
 
-.jumbotron .container {
-
-  padding: 2% !important;
-}
-
-.col-md-6 img {
-  width: 100%;
-  height: auto;
-}
-
-
-
-/* This will alter infoWindow layout when we break out into the horizontal layout. */
-
-@media(min-width: 767px) {
-
-  #bodyContent {
-    padding-right: 2.5rem;
   }
 
+  .jumbotron .container {
+
+    padding: 2% !important;
+  }
+
+  .col-md-6 img {
+    width: 100%;
+    height: auto;
+  }
 
 }
+
+
+
+
+
 
 /* Smaller devices */
 @media (max-width:990px) {
@@ -14091,7 +14101,7 @@ img {
   #btn_row2 {
     margin-left: 8rem;
     margin-right: 8rem;
-    margin-top: 2;
+    margin-top: 2vh;
 
   }
 
