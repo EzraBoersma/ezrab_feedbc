@@ -4370,7 +4370,6 @@ fieldset:disabled .btn {
 
 .navbar {
   --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: #7b8ab8;
   --bs-navbar-hover-color: #485785;
   --bs-navbar-disabled-color: #adb6d3;
@@ -13682,7 +13681,8 @@ fieldset:disabled .btn {
   background-color: transparent;
 }
 
-/* **********Custom CSS********** */
+/* ********* VIU Food Services FEED BC **********  
+**********Custom CSS Style declarations********** */
 
 .btn-lg1 {
   padding: 20%;
@@ -13700,6 +13700,10 @@ fieldset:disabled .btn {
 
 .btn-lg3 {
   width: 50%;
+}
+
+.btn-lg4 {
+  width: 100%;
 }
 
 .accordion-body {
@@ -13768,7 +13772,6 @@ body::-webkit-scrollbar {
 
 .wrapper {
   height: 100%;
-
 }
 
 #mainpanel {
@@ -13776,8 +13779,9 @@ body::-webkit-scrollbar {
   margin-top: 15vh;
   padding-bottom: 3vh;
   padding-top: 2vh;
-
 }
+
+
 
 #description-body {
   font-size: calc(1rem + 0.2vw);
@@ -13903,6 +13907,24 @@ img {
   overflow-x: clip;
 }
 
+.iframe-container {
+
+  margin-top: 4vh;
+  width: 82vw;
+  /* Set the width to 80% of the viewport width */
+  height: 50vh;
+  /* Set the height to 48% of the viewport height */
+}
+
+iframe {
+  width: 80vw;
+  height: 48vh;
+}
+
+.alert-heading {}
+
+.alert-subheading {}
+
 
 
 /*------------------ Custom dietary icons  --------------*/
@@ -13985,10 +14007,11 @@ img {
 }
 
 
+
 /* Small devices */
 @media (max-width: 766px) {
   .nav-link {
-    font-size: calc(1.4rem + 0.5vw);
+    font-size: calc(1.2rem + 0.5vw);
 
   }
 
@@ -14005,8 +14028,14 @@ img {
     font-size: calc(.75rem + 0.2vw) !important;
   }
 
+  .alert-heading,
   .container>h3 {
     font-size: calc(.75rem + 0.3vw) !important;
+  }
+
+  .alert-subheading {
+    font-size: calc(.5rem + 0.2vw) !important;
+
   }
 
   #mainpanel {
@@ -14023,6 +14052,9 @@ img {
     width: 100%;
     height: auto;
   }
+
+
+
 
 }
 
@@ -14081,9 +14113,15 @@ img {
 
   }
 
-  .mapbox {
+  .mapbox,
+  .embedstore {
     padding-bottom: 0 !important;
   }
+
+
+
+
+
 
 
 
@@ -14150,6 +14188,239 @@ img {
   .infowindow-body {
     font-size: calc(.72rem + 0.2vw) !important;
   }
+
+
+}
+
+/* CSS rules for mobile devices in landscape mode */
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+
+  .alert {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+
+  }
+
+  .alert-heading,
+  .container>h3 {
+    font-size: calc(.75rem + 0.3vw) !important;
+  }
+
+  .alert-subheading {
+    font-size: calc(.5rem + 0.2vw) !important;
+
+  }
+
+  .btn-lg4 {
+    padding-top: 8px !important;
+  }
+
+  h3,
+  .h3 {
+    font-size: calc(0.5rem + 0.5vw) !important;
+  }
+
+  .menu ol,
+  ul {
+    padding-left: 0 !important;
+  }
+
+  .menu .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 1rem !important;
+  }
+
+  #nav-logo {
+    width: 32px;
+  }
+
+  #legend {
+    max-height: 48vh;
+  }
+
+  #dietary-guide {
+    max-height: 48vh;
+  }
+
+  #navbanner {
+    font-size: calc(0.5rem + 0.5vw);
+  }
+
+  #mainpanel {
+    margin-top: 20vh !important;
+  }
+
+  .accordion-body {
+    font-size: calc(0.5rem + 0.5vw) !important;
+  }
+
+
+  /* Resizing text on main buttons - improves visibility */
+  .btn,
+  .accordion-button {
+    font-size: calc(0.5rem + 0.7vw) !important;
+  }
+
+  #btn_body {
+    padding-bottom: 0 !important;
+  }
+
+  #btn_row2 {
+    margin-top: 0.75rem !important;
+  }
+
+  .localfood_column {
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+  }
+
+
+  .col-lg {
+    flex: 1 0 0%;
+  }
+
+  .row-cols-lg-auto>* {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .row-cols-lg-1>* {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .row-cols-lg-2>* {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .row-cols-lg-3>* {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+  .row-cols-lg-4>* {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .row-cols-lg-5>* {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  .row-cols-lg-6>* {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
+  .col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .col-lg-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-lg-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+
+  .container-sm,
+  .container {
+    max-width: 90% !important;
+  }
+
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 90% !important;
+  }
+
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 90% !important;
+  }
+
+
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 90% !important;
+  }
+
+
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 85vw;
+  }
+
+
+
 
 
 }
