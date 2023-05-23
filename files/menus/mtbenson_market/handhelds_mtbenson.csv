@@ -1,4 +1,12 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;Nutrition Label;LeaveEmpty
-Falafel;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;waffles;
-Tuna Salad;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;waffles;
-Chicken Salad;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;Potato;VGN, GF, DF;waffles;
+Tuna Salad;Tuna / Mayo / Red Onion / Celery / Dill / Lettuce;Wheat, eggs, mustard, fish.;needed;needed;needed;
+Chicken Caesar Wrap;Roasted Chicken / Parmesan / Romaine Caesar Dressing;Wheat, milk, eggs, mustard.;needed;needed;needed;
+Turkey Sandwich;Turkey / Swiss cheese / Red Onion / Tomato / Lettuce / Garlic Aioli;Wheat, milk, eggs, mustard.;needed;needed;needed;
+Turkey Wrap;Turkey / Lettuce / Tomato / Cucumber / Red Onion / Spicy Mayo;needed;needed;needed;needed;
+Ham & Cheese;Ham / Swiss Cheese / Red Onion / Pickles / Tomato / Honey Dijon Aioli;needed;needed;needed;needed;
+Roast Beef;Roast beef /  Swiss Cheese /  Red Onion /  Tomato / Lettuce / Garlic Aioli;needed;needed;needed;needed;
+Falafel Wrap;Falafel / Red Onion / Cucumber / Tomato / Feta / Tatziki / Lettuce;needed;needed;needed;needed;
+Italian Sandwich;Salami / Swiss Cheese / Tomato / Onion / Lettuce / Garlic Aioli;needed;needed;needed;needed;
+;;;;;;
+;;;;;;
+;;;;;;

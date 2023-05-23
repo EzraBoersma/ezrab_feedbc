@@ -1,4 +1,12 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Fruit Cup;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;waffles;
-Vegetable & Dip;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;waffles;
-Falafel & Dip;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;Potato;VGN, GF, DF;waffles;
+Protein Pack;Salami / Cheddar Cheese / Dates / Melba Toast / Chocolate;needed;needed;needed;needed;
+Vegetarian Protein Pack;Cucumber / Carrot / Tomato / Eggs / Cheddar Cheese / Nuts;needed;needed;needed;needed;
+Seasonal Cut Fruit;Seasonal Fruit;needed;needed;needed;needed;
+Falafel & Dip;Falafel / Cucumber / Tzatziki;needed;needed;needed;needed;
+Chicken Gyoza;Chicken / Vegetable;needed;needed;needed;needed;
+Shimp Gyoza;Shrimp;needed;needed;needed;needed;
+Packaged Curry Meal Small;Basmati Rice / Butter Chicken sauce / Roasted Chicken;needed;needed;needed;needed;
+Yogurt Parfait;Yogurt / Granola / Seasonal Fruit;needed;needed;needed;needed;
+Overnight Oats;Milk / Oats / Chia Seed / Yogurt / Vanilla / Seasonal Fruit;needed;needed;needed;needed;
+Chia Pudding;Milk / Chia Seeds / Honey / Seasonal Fruit;needed;needed;needed;needed;
+Portioned Eggs (2);Hard boiled eggs;needed;needed;needed;needed;
