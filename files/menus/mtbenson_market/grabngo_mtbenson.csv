@@ -1,12 +1,12 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Protein Pack;Salami / Cheddar Cheese / Dates / Melba Toast / Chocolate;needed;needed;needed;needed;
-Vegetarian Protein Pack;Cucumber / Carrot / Tomato / Eggs / Cheddar Cheese / Nuts;needed;needed;needed;needed;
-Seasonal Cut Fruit;Seasonal Fruit;needed;needed;needed;needed;
-Falafel & Dip;Falafel / Cucumber / Tzatziki;needed;needed;needed;needed;
-Chicken Gyoza;Chicken / Vegetable;needed;needed;needed;needed;
-Shimp Gyoza;Shrimp;needed;needed;needed;needed;
-Packaged Curry Meal Small;Basmati Rice / Butter Chicken sauce / Roasted Chicken;needed;needed;needed;needed;
-Yogurt Parfait;Yogurt / Granola / Seasonal Fruit;needed;needed;needed;needed;
-Overnight Oats;Milk / Oats / Chia Seed / Yogurt / Vanilla / Seasonal Fruit;needed;needed;needed;needed;
-Chia Pudding;Milk / Chia Seeds / Honey / Seasonal Fruit;needed;needed;needed;needed;
-Portioned Eggs (2);Hard boiled eggs;needed;needed;needed;needed;
+Protein Pack;Salami / Cheddar Cheese / Dates / Melba Toast / Chocolate;Milk, sulphites, mustard.  May contain peanuts, treenuts, soy.;Nesvog Meats Salami, Castle Cheese Cheddar;BC;needed;
+Vegetarian Protein Pack; Cucumber / Carrot / Celery / Tomato / Eggs / Cheddar Cheese / Nuts;Milk, eggs, treenuts.;Fresh Start Cucumber, Castle Cheese Cheddar;BC, VEG;needed;
+Seasonal Cut Fruit;Seasonal Fruit;No known priority allergens.;Fresh Start Pineapple,  Fresh Start Honeydew;BC, VEG, VGN, GF, DF;needed;
+Falafel & Dip;Falafel / Cucumber / Tzatziki;Milk, wheat.;Fresh Start Cucumber, Zorba's Tzatziki;BC, VEG;needed;
+Chicken Gyoza;Chicken / Cabbage / Spring Onion / Sugar / Sesame Oil;Sesame, soy, wheat.;NA;DF;needed;
+Shimp Gyoza;Shrimp / Cabbage / Chives / Spring Onion / Wheat Flour / Ginger / Garlic / Soy Sauce ;Crustacean, sesame, soy, wheat, mustard.;NA;NA;needed;
+Packaged Curry Meal Small;Basmati Rice / Butter Chicken sauce / Roasted Chicken;Milk.;Hallmark Chicken;BC;needed;
+Yogurt Parfait;Yogurt / Granola / Seasonal Fruit;Milk, sesame, wheat. May contain peanuts, soy, sulphites, mustard.;Snowcrest Blueberries;BC, VEG;needed;
+Overnight Oats;Milk / Oats / Chia Seed / Yogurt / Vanilla / Seasonal Fruit;Milk, wheat.;Fresh Start Pineapple,  Fresh Start Honeydew, Snowcrest Blueberries;BC, VEG;needed;
+Chia Pudding;Milk / Chia Seeds / Honey / Seasonal Fruit;Milk.;Fresh Start Pineapple,  Fresh Start Honeydew, Snowcrest Blueberries;BC, VEG, GF;needed;
+Portioned Eggs (2);Hard boiled eggs;Eggs.;NA;VEG, DF, GF;needed;

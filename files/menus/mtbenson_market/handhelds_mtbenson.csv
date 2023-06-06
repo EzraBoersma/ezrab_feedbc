@@ -1,12 +1,9 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;Nutrition Label;LeaveEmpty
-Tuna Salad;Tuna / Mayo / Red Onion / Celery / Dill / Lettuce;Wheat, eggs, mustard, fish.;needed;needed;needed;
-Chicken Caesar Wrap;Roasted Chicken / Parmesan / Romaine Caesar Dressing;Wheat, milk, eggs, mustard.;needed;needed;needed;
-Turkey Sandwich;Turkey / Swiss cheese / Red Onion / Tomato / Lettuce / Garlic Aioli;Wheat, milk, eggs, mustard.;needed;needed;needed;
-Turkey Wrap;Turkey / Lettuce / Tomato / Cucumber / Red Onion / Spicy Mayo;needed;needed;needed;needed;
-Ham & Cheese;Ham / Swiss Cheese / Red Onion / Pickles / Tomato / Honey Dijon Aioli;needed;needed;needed;needed;
-Roast Beef;Roast beef /  Swiss Cheese /  Red Onion /  Tomato / Lettuce / Garlic Aioli;needed;needed;needed;needed;
-Falafel Wrap;Falafel / Red Onion / Cucumber / Tomato / Feta / Tatziki / Lettuce;needed;needed;needed;needed;
-Italian Sandwich;Salami / Swiss Cheese / Tomato / Onion / Lettuce / Garlic Aioli;needed;needed;needed;needed;
-;;;;;;
-;;;;;;
-;;;;;;
+Tuna Salad;Tuna / Mayo / Red Onion / Celery / Dill / Lettuce;Wheat, eggs, mustard, fish. Bread made in a facility that also processes: peanuts, crustacean, shellfish, fish, sulphites, eggs, mustard. ;Island City Bread;BC, VEG;Tuna_Salad;
+Chicken Caesar Wrap;Crispy Chicken / Bacon / Romaine / Caesar Dressing /  Parmesan / Sundried Tomato Tortilla;Wheat, gluten, milk, eggs, soy, mustard.;Fresh Start Romaine, Castle Cheese Parmesan;BC;Chicken_Caesar_Wrap;
+Turkey Sandwich;Turkey / Swiss Cheese / Red Onion / Tomato / Lettuce / Garlic Aioli / Multigrain Bread;Wheat, gluten, milk, eggs, mustard.;Fresh Start Tomato ,Island City Bread;BC;Turkey_Sandwich;
+Turkey Wrap;Turkey / Lettuce / Tomato /  Red Onion / Spicy Mayo / Sundried Tomato Tortilla;Wheat, gluten, milk, eggs, mustard, fish. Sriracha contains anchovy.;Fresh Start Tomato;BC;Turkey_Wrap;
+Ham & Cheese;Ham / Swiss Cheese / Red Onion / Pickles / Tomato / Honey Dijon Aioli / Multigrain Bread;Wheat, gluten, milk, eggs, mustard. ;Fresh Start Tomato ,Island City Bread;BC;needed;
+Roast Beef;Roast beef /  Swiss Cheese /  Red Onion /  Tomato / Lettuce / Garlic Aioli /  Multigrain Bread;Wheat, gluten, milk, eggs, mustard. ;Fresh Start Tomato ,Island City Bread;BC;needed;
+Falafel Wrap;Falafel / Red Onion / Cucumber / Tomato / Feta / Tzatziki / Lettuce / Sundried Tomato Tortilla;Wheat, milk. ;Zorba's Tzatziki, Fresh Start Cucumber, Fresh Start Tomato;BC, VEG;needed;
+Italian Sandwich;Salami / Swiss Cheese / Tomato / Onion / Lettuce / Garlic Aioli / Ciabatta ;Wheat, gluten, milk, eggs, sulphites, mustard ;Fresh Start Tomato ,Island City Bread, Castle Cheese Swiss;BC;needed;

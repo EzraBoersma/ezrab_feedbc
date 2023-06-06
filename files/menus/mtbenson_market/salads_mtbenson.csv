@@ -1,4 +1,4 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Cobb Salad;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;waffles;
-Kale Caesar;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;waffles;
-House Salad;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;Potato;VGN, GF, DF;waffles;
+Cobb Salad; Egg / Guacamole / Bacon / Cheddar / Tomato / Cucumber / Romaine / Ranch Dressing;Milk, eggs.;Fresh Start Cucumber, Fresh Start Tomato, Fresh Start Romaine;BC;needed;
+Caesar Salad;Crispy Chicken / Bacon / Romaine / Parmesan / Caesar Dressing;Milk, eggs, fish.;Fresh Start Romaine, Castle Cheese Parmesan;BC;needed;
+House Salad;Carrots / Tomato / Cucumber / Romaine / Balsamic Dressing;Dressing contains sulphites.;Fresh Start Cucumber, Fresh Start Tomato, Fresh Start Romaine;BC, VEG, VGN, GF DF;needed;

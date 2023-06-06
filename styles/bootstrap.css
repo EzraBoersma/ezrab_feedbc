@@ -14232,7 +14232,7 @@ iframe {
   }
 
   #nav-logo {
-    width: 32px;
+    display: none;
   }
 
   #legend {

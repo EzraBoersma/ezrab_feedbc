@@ -1,9 +1,9 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Apple Turnover;needed;needed;needed;needed;waffles;
+Apple Turnover;Apple Filling  / Enriched Flour / Butter / Whole Eggs / Cinnamon / Salt;needed;needed;needed;waffles;
 Cookie;needed;needed;needed;needed;waffles;
 Muffin;needed;needed;needed;needed;waffles;
 Banana Bread;needed;needed;needed;needed;needed;
-Peanut Butter Brownie;needed;needed;needed;needed;needed;
+Peanut Butter Brownie;Peanut Butter /  Enriched Flour /  Margarine / White Chocolate / Chocolate / Skim Milk Powder / Whole Eggs /  Peanuts / Sugar;Wheat, milk, eggs, soy, peanuts. May contain treenuts, sulphites.;NA;VEG;needed;
 Cherry Danish;needed;needed;needed;needed;needed;
 Maple Lattice Danish;needed;needed;needed;needed;needed;
 Spinach Lattice Danish;needed;needed;needed;needed;needed;
