@@ -1,10 +1,10 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;Nutrition Label;LeaveEmpty
-Classic Burger;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;waffles;
-Loaded Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Tomato, Lettuce;GFO, BC;waffles;
-Veggie Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;waffles;
-Crispy Chicken Burger;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;Samosas;VGN, GF, DF;waffles;
-Pulled Pork Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;NA;GF;waffles;
-Chicken Strips;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;NA;GF,VGN;waffles;
-Fish & Chip Platter;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;No known priority allergens;Egg, Sausage;GF,VEG;waffles;
-Chef's Salad;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;NA;GF;waffles;
-Poutine;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;Cheese Curds;GF,VGN;waffles;
+Classic Burger;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;placeholder;
+Loaded Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;placeholder;Tomato, Lettuce;GFO, BC;placeholder;
+Veggie Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;placeholder;Egg, Sausage;GF,VEG;placeholder;
+Crispy Chicken Burger;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;placeholder;Samosas;VGN, GF, DF;placeholder;
+Pulled Pork Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;placeholder;NA;GF;placeholder;
+Chicken Strips;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;placeholder;NA;GF,VGN;placeholder;
+Fish & Chip Platter;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;placeholder;Egg, Sausage;GF,VEG;placeholder;
+Chef's Salad;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;placeholder;NA;GF;placeholder;
+Poutine;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;placeholder;Cheese Curds;GF,VGN;placeholder;

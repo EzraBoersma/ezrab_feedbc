@@ -1,4 +1,4 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Club Sandwich;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;Island City Bread;GF, BC;cobbsalad;
-Turkey Swiss Wrap;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG, BC;kalecaesar;
-Falafel Wrap;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;Zorba's Tzatziki, BCfresh Tomatoes;VGN, BC, GF, DF;housesalad;
+Club Sandwich;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;Island City Bread;GF, BC;placeholder;
+Turkey Swiss Wrap;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;Wheat.;Egg, Sausage;GF,VEG, BC;placeholder;
+Falafel Wrap;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;Wheat.;Zorba's Tzatziki, BCfresh Tomatoes;VGN, BC, GF, DF;placeholder;

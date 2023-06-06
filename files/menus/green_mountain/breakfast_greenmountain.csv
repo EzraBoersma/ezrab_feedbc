@@ -1,4 +1,4 @@
-﻿ItemName;Ingredients;LocalIngredients;Diet;nutritionLabel
-Waffles;Flour, Egg, Oil, Water, Salt, Sugar, Baking Powder;NA;VEG;waffles
-Breakfast Sandwich;English Muffin, Egg, Oil, Water, Salt, Sugar, Baking Powder;Egg, Sausage;;
-Tater tots;Potato, onion, oil, salt, spices.;Potato;VGN, GF, DF;tater tots
+﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel
+Classic Club;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;VEG;placeholder
+Turkey Swiss Wrap;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;NA;placeholder
+Falafel;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;;Potato;VGN, GF, DF;placeholder
