@@ -1,11 +1,11 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Bacon Breakfast Burrito;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;Egg, Sausage;GFO;placeholder;
-Sausage Breakfast Burrito;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;Wheat, sulphites, egg.;Egg, Sausage;GFO;placeholder;
-Veggie Breakfast Burrito;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;Wheat, sulphites, egg.;Potato;VGN, GFO;placeholder;
+Bacon Breakfast Burrito;Eggs / Bacon / Tater Tots /  Salsa / Nacho Cheese;Wheat, milk, sulphites, egg.;Castle Cheese Nacho Blend;GFO;Bacon_Breakfast_Burrito;
+Sausage Breakfast Burrito;Eggs / Pork Sausage / Tater Tots /  Salsa / Nacho Cheese;Wheat, milk, sulphites, egg.; Castle Cheese Nacho Blend;GFO;Bacon_Breakfast_Burrito;
+Veggie Breakfast Burrito;Eggs / Spinach / Tater Tots /  Salsa / Nacho Cheese;Wheat, milk, sulphites, egg.; Castle Cheese Nacho Blend;VGN, GFO;Falafel_Wrap;
 Sausage Breakfast Sandwich;Muffin / Cooked Sausage Round / Cooked Egg Round / Pasteurized Process Cheddar Cheese;Soy, wheat, milk, eggs.;NA;NA;Sausage_Breakfast_Sandwich;
 Bacon Breakfast Sandwich;English Muffin / Egg Patty / Processed Cheddar Cheese / Bacon.;Soy, wheat, milk, eggs.;NA;NA;Bacon_Breakfast_Sandwich;
 Egg and Cheese Breakfast Sandwich;English Muffin / Egg Patty / Processed Cheddar Cheese;Soy, wheat, milk, eggs.;NA;VEG;Egg_and_Cheese_Breakfast_Sandwich;
-Tofu Scramble Roll;pastry / tofu / seasonings;Wheat, soy.;NA;VGN;placeholder;
-Beef Sausage Roll;pastry / beef / seasonings;Wheat, milk, eggs, soy.;NA;NA;placeholder;
-Spicy Chicken Sausage Roll ;pastry / chicken sausage / seasonings;Wheat, milk, eggs, soy.;NA;NA;placeholder;
-Breakfast Waffles;Belgian-style Waffles / Whipped Cream / Seasonal Fruit Compote or Maple Syrup ;Wheat, milk, eggs.;Patisserie LeBeau Waffles;VEG;placeholder;
+Tofu Scramble Roll;Flaky Pastry / Tofu Scramble / Spices;Wheat, soy.;Maureen's Tofu Roll;BC,VGN,DF;Tofu_Scramble_Roll;
+Beef Sausage Roll;Flaky Pastry / Ground Beef Sausage / Spices;Wheat, soy.;NA;DF;Beef_Sausage_Roll;
+Spicy Chicken Sausage Roll ;Flaky Pastry / Ground Seasoned Chicken Sausage / Spices;Wheat, soy.;NA;DF;Beef_Sausage_Roll;
+Breakfast Waffles;Belgian-style Waffles / Whipped Cream / Seasonal Fruit Compote or Maple Syrup ;Wheat, milk, eggs.;Patisserie LeBeau Waffles;BC,VEG;Egg_and_Cheese_Breakfast_Sandwich;

@@ -1,8 +1,8 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;Nutrition Label;LeaveEmpty
-Sausage Roll;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;placeholder;
-Vegan Tofu Roll;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;NA;GF,VGN;placeholder;
-Beef Samosa;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;placeholder;
-Vegetarian Samosa;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;Samosas;VGN, GF, DF;placeholder;
-Pepperoni Stick;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;NA;GF;placeholder;
-Ham & Cheese Croissant;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;No known priority allergens;NA;GF,VGN;placeholder;
-Cake Slice Varieties;Cake Slice;Wheat, milk, eggs, gluten, soy. May contain peanuts, sesame.;Egg, Sausage;GF,VEG;placeholder;
+Tofu Scramble Roll;Flaky Pastry / Tofu Scramble / Spices;Wheat, soy.;Maureen's Tofu Roll;BC,VGN,DF;Tofu_Scramble_Roll;
+Beef Sausage Roll;Flaky Pastry / Ground Beef Sausage / Spices;Wheat, soy.;NA;DF;Beef_Sausage_Roll;
+Beef Samosa;Pastry / Beef / Peas / Carrots / Onion / Potatoes;Wheat, sulphites.;Nana's Kitchen Beef Samosa;BC,DF;Beef_Samosa;
+Vegetarian Samosa;Pastry / Peas / Carrots / Onion / Potatoes;Wheat, sulphites.;Nana's Kitchen Vegetarian Samosa;BC,DF,VEG;Vegetarian_Samosa;
+Pepperoni Stick;Yeast Dough / Spicy Pepperoni / Mixed Shredded Cheese;Wheat, milk, eggs, sulphites.;NA;NA;Ham_&_Cheese_Croissant;
+Ham & Cheese Croissant;Flaky Butter Pastry /  Black Forest Ham / Cheddar Cheese;Wheat, milk, eggs, soy, sulphites.;NA;NA;Ham_&_Cheese_Croissant;
+Cake Slice Varieties;Item will vary daily - find information in the cafeteria.;May contain wheat, milk, eggs, gluten, soy, peanuts, sesame.;NA;VEG;placeholder;

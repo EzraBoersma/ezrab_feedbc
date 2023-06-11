@@ -1,9 +1,9 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Bacon Breakfast Burrito;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GFO;placeholder;
-Sausage Breakfast Burrito;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;Dairy, wheat, sulphites, egg.;NA;GFO;placeholder;
-Veggie Breakfast Burrito;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;Dairy, wheat, sulphites, egg.;NA;VGN, GFO;placeholder;
-Breakfast Special;Eggs / Bacon or Sausage / Tater Tots / Croissant;Dairy, wheat, sulphites, egg.;NA;BC;placeholder;
-Vegetarian Breakfast Special;Eggs / Vegan Sausage / Tater Tots / Croissant;Dairy, wheat, sulphites, egg.;NA;VEG, BC;placeholder;
-Lumberjack Bowl;Tater Tots / Sausage + Bacon or Vegan Sausage / Cheddar Cheese / Diced Tomato / Green Onion / Hollandaise;Dairy, wheat, sulphites, egg.;Tomato, Green Onion;BC;placeholder;
-Vegetarian Lumberjack Bowl;Tater Tots / Vegan Sausage / Cheddar Cheese / Diced Tomato / Green Onion / Hollandaise;Dairy, wheat, sulphites, egg.;Tomato, Green Onion;VEG, BC;placeholder;
-Brekfast Waffles;Waffles / Berry Compote / Whipped Cream;Dairy, wheat, egg.;NA;VEG;placeholder;
+Bacon Breakfast Burrito;Eggs / Bacon / Tater Tots /  Salsa / Nacho Cheese;Wheat, gluten, milk, sulphites, egg.;Castle Cheese Nacho Blend;GFO;Bacon_Breakfast_Burrito;
+Sausage Breakfast Burrito;Eggs / Pork Sausage / Tater Tots /  Salsa / Nacho Cheese;Wheat, gluten, milk, sulphites, egg.; Castle Cheese Nacho Blend;GFO;Bacon_Breakfast_Burrito;
+Veggie Breakfast Burrito;Eggs / Spinach / Tater Tots /  Salsa / Nacho Cheese;Wheat, gluten, milk, sulphites, egg.; Castle Cheese Nacho Blend;VGN, GFO;Falafel_Wrap;
+Breakfast Special;Eggs / Bacon or Sausage / Tater Tots / Croissant;Wheat, gluten, milk, sulphites, egg.;NA;NA;Bacon_Breakfast_Burrito;
+Vegetarian Breakfast Special;Eggs / Vegan Sausage / Tater Tots / Croissant;Wheat, gluten, milk, sulphites, egg.;NA;VEG;Falafel_Wrap;
+Lumberjack Bowl;Tater Tots / Sausage  and  Bacon / Cheddar Cheese / Diced Tomato / Green Onion / Hollandaise;Wheat, gluten, milk, sulphites, egg.;Fresh Start Tomato, Castle Cheese Nacho Blend;BC;Bacon_Breakfast_Burrito;
+Vegetarian Lumberjack Bowl;Tater Tots / Vegan Sausage / Cheddar Cheese / Diced Tomato / Green Onion / Hollandaise;Wheat, gluten, milk, sulphites, egg.;Fresh Start Tomato, Castle Cheese Nacho Blend;VEG, BC;Falafel_Wrap;
+Breakfast Waffles;Waffles / Berry Compote / Whipped Cream;Wheat, milk, egg.;Patisserie LeBeau Waffle;VEG;Apple_Turnover;

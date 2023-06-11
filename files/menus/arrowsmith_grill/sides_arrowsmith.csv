@@ -1,7 +1,7 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;Nutrition Label;LeaveEmpty
-Fries;McCain Gold Crisp Fries[Potatoes, canola oil, wheat flour, modified corn starch, corn flour, salt, autolyzed yeast, baking powder, sodium phosphate, dextrose, modified cellulose, colour];Wheat.;NA;VEG,VGN,DF;Fries;
-Poutine; Fries / Gravy / Cheese Curds;Wheat, milk, soy.;NA;VEG,DF;placeholder;
-Extra Cheese Curds;29% MF Cheese Curds;Milk.;NA;VEG;placeholder;
-Side Gravy;Vegetarian Brown Gravy;Wheat, milk, soy.;NA;VEG;placeholder;
+Fries;McCain Gold Crisp Fries[Potatoes, canola oil, wheat flour, modified corn starch, corn flour, salt, autolyzed yeast, baking powder, sodium phosphate, dextrose, modified cellulose, colour];Wheat.;NA;VGN,DF;Fries;
+Poutine; Golden Crispy Fries / Vegetarian Brown Gravy / Cheese Curds;Wheat, milk, soy.;NA;VEG;Poutine;
+Extra Cheese Curds;29% MF Milk / Enzymes / Salt;Milk.;NA;GF,VEG;Extra_Cheese_Curds;
+Side Gravy;Vegetarian Brown Gravy;Wheat, milk, soy.;NA;VEG;Side_Gravy_-_Need_Update;
 Tater Tot;Potatoes / Canola Oil / Salt / Seasonings;No known priotity allergens.;NA;VEG,VGN,GF,DF;Tater_Tots;
 12 oz Soup;Item will vary daily - find information in the cafeteria.;Item will vary daily - find information in the cafeteria.;NA;NA;placeholder;

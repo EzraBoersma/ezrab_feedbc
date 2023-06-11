@@ -22,6 +22,31 @@
   <script src="./scripts/popper.min.js"></script>
   <script src="./scripts/bootstrap.min.js"></script>
 
+  <!-- This script will Reload the page after 5 minutes of inactivity in order to log out a user from the order online shop -->
+  <script>
+    // Place the JavaScript code snippet here
+    var inactivityTime = 0;
+    var delayInMilliseconds = 300000; // 5 minutes in milliseconds
+
+    function reloadPage() {
+      location.reload();
+    }
+
+    function resetTimer() {
+      clearTimeout(inactivityTime);
+      inactivityTime = setTimeout(reloadPage, delayInMilliseconds);
+    }
+
+    // Event listeners for mouse movement and key press
+    document.addEventListener('mousemove', resetTimer);
+    document.addEventListener('keydown', resetTimer);
+
+    // Initial setup when the page loads
+    resetTimer();
+  </script>
+
+
+
   <script>
     /* These are the code segments that will dynamically swap the content of the mainpanel element,
     to display the selected resources. 
@@ -162,13 +187,13 @@
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
                 aria-expanded="false">View Menu</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" id="menu_btn_nav_greenmountain">Green Mountain</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" id="menu_btn_nav_theroost">The Roost</a>
+                <a class="dropdown-item" id="menu_btn_nav_mtbenson">Mt. Benson Market</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" id="menu_btn_nav_arrowsmith">Arrowsmith Grill</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" id="menu_btn_nav_mtbenson">Mt. Benson Market</a>
+                <a class="dropdown-item" id="menu_btn_nav_greenmountain">Green Mountain</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" id="menu_btn_nav_theroost">The Roost</a>
 
               </div>
             </li>

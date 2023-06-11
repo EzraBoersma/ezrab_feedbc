@@ -1,4 +1,4 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Cobb Salad; Egg / Guacamole / Bacon / Cheddar / Tomato / Cucumber / Romaine / Ranch Dressing;Milk, eggs.;Fresh Start Cucumber, Fresh Start Tomato, Fresh Start Romaine;BC;placeholder;
-Caesar Salad;Crispy Chicken / Bacon / Romaine / Parmesan / Caesar Dressing;Milk, eggs, fish.;Fresh Start Romaine, Castle Cheese Parmesan;BC;placeholder;
-House Salad;Carrots / Tomato / Cucumber / Romaine / Balsamic Dressing;Dressing contains sulphites.;Fresh Start Cucumber, Fresh Start Tomato, Fresh Start Romaine;BC, VEG, VGN, GF DF;placeholder;
+Cobb Salad; Egg / Guacamole / Bacon / Cheddar / Tomato / Cucumber / Romaine / Ranch Dressing;Milk, eggs.;Fresh Start Cucumber, Fresh Start Tomato, Fresh Start Romaine;BC;Cobb_Salad;
+Caesar Salad;Crispy Chicken / Bacon / Romaine / Parmesan / Caesar Dressing;Milk, eggs, fish.;Fresh Start Romaine, Castle Cheese Parmesan;BC;Caesar_Salad;
+House Salad;Carrots / Tomato / Cucumber / Romaine / Balsamic Dressing;Dressing contains sulphites.;Fresh Start Cucumber, Fresh Start Tomato, Fresh Start Romaine;BC, VEG, VGN, GF DF;House_Salad;

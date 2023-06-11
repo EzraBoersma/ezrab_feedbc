@@ -9059,6 +9059,10 @@ fieldset:disabled .btn {
   padding-bottom: 3rem !important;
 }
 
+.pb-btnspc {
+  padding-bottom: 12vh !important;
+}
+
 .ps-0 {
   padding-left: 0 !important;
 }
@@ -13706,6 +13710,10 @@ fieldset:disabled .btn {
   width: 100%;
 }
 
+.btn-lg5 {
+  width: 75%;
+}
+
 .accordion-body {
   font-size: medium;
 }
@@ -13718,7 +13726,7 @@ th {
 
 #map {
   margin-top: 4vh;
-  height: 48vh;
+  height: 60vh;
 }
 
 #menuaccordion {
@@ -13728,7 +13736,7 @@ th {
 
 #legend {
   margin-top: 4vh;
-  max-height: 48vh;
+  max-height: 60vh;
   overflow-y: scroll;
 }
 
@@ -13736,12 +13744,6 @@ th {
   font-size: small;
 
 }
-
-html {
-  scrollbar-width: thin !important;
-}
-
-
 
 
 .infowincol-2 {
@@ -13776,7 +13778,7 @@ body::-webkit-scrollbar {
 
 #mainpanel {
   min-height: 50%;
-  margin-top: 15vh;
+  margin-top: 11vh;
   padding-bottom: 3vh;
   padding-top: 2vh;
 }
@@ -13909,7 +13911,7 @@ img {
 
 .iframe-container {
 
-  margin-top: 4vh;
+  margin-top: 2vh;
   width: 82vw;
   /* Set the width to 80% of the viewport width */
   height: 50vh;
@@ -13918,12 +13920,10 @@ img {
 
 iframe {
   width: 80vw;
-  height: 48vh;
+  height: 60vh;
 }
 
-.alert-heading {}
 
-.alert-subheading {}
 
 
 
@@ -14166,6 +14166,25 @@ iframe {
 
   .infowindow-body {
     font-size: calc(.70rem + 0.18vw) !important;
+  }
+
+  #mainpanel {
+    margin-top: 11vh !important;
+
+  }
+
+  .alert-heading {
+    font-size: calc(1rem + 0.5vw) !important;
+    margin-bottom: 0 !important;
+  }
+
+  .alert-subheading {
+
+    font-size: calc(1rem + 0.3vw) !important;
+  }
+
+  .alert {
+    padding: 0 !important;
   }
 
 
@@ -14423,4 +14442,8 @@ iframe {
 
 
 
+}
+
+html {
+  scrollbar-width: thin !important;
 }

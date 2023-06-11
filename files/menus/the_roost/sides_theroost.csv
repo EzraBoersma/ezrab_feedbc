@@ -1,5 +1,6 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;Nutrition Label;LeaveEmpty
-Fries;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;placeholder;
-Salad;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Mixed Greens, Tomato, Cucumber;GF,VGN;placeholder;
-Coleslaw;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;placeholder;
-Cheese Curds;28% MF Milk / Enzymes / Salt;Milk.;Egg, Sausage;GF,VEG;placeholder;
+Fries;McCain Gold Crisp Fries[Potatoes, canola oil, wheat flour, modified corn starch, corn flour, salt, autolyzed yeast, baking powder, sodium phosphate, dextrose, modified cellulose, colour];Wheat.;NA;VGN,DF;Fries;
+Cheese Curds;29% MF Milk / Enzymes / Salt;Milk.;NA;GF,VEG;placeholder;
+Chef's Salad;Item will vary daily - find information in the cafeteria.;Item will vary daily - find information in the cafeteria.;NA;NA;placeholder;
+Coleslaw;Green Cabbage / Red Cabbage / Shredded Carrot / Coleslaw Dressing;Eggs, mustard.;NA;GF,VEG;House_Salad;
+Daily Soup;Item will vary daily - find information in the cafeteria.;Item will vary daily - find information in the cafeteria.;NA;NA;placeholder;

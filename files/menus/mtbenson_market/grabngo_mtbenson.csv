@@ -1,12 +1,12 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Protein Pack;Salami / Cheddar Cheese / Dates / Melba Toast / Chocolate;Milk, sulphites, mustard.  May contain peanuts, treenuts, soy.;Nesvog Meats Salami, Castle Cheese Cheddar;BC;placeholder;
-Vegetarian Protein Pack; Cucumber / Carrot / Celery / Tomato / Eggs / Cheddar Cheese / Nuts;Milk, eggs, treenuts.;Fresh Start Cucumber, Castle Cheese Cheddar;BC, VEG;placeholder;
-Seasonal Cut Fruit;Seasonal Fruit;No known priority allergens.;Fresh Start Pineapple,  Fresh Start Honeydew;BC, VEG, VGN, GF, DF;placeholder;
-Falafel & Dip;Falafel / Cucumber / Tzatziki;Milk, wheat.;Fresh Start Cucumber, Zorba's Tzatziki;BC, VEG;placeholder;
-Chicken Gyoza;Chicken / Cabbage / Spring Onion / Sugar / Sesame Oil;Sesame, soy, wheat.;NA;DF;placeholder;
-Shimp Gyoza;Shrimp / Cabbage / Chives / Spring Onion / Wheat Flour / Ginger / Garlic / Soy Sauce ;Crustacean, sesame, soy, wheat, mustard.;NA;NA;placeholder;
-Packaged Curry Meal Small;Basmati Rice / Butter Chicken sauce / Roasted Chicken;Milk.;Hallmark Chicken;BC;placeholder;
-Yogurt Parfait;Yogurt / Granola / Seasonal Fruit;Milk, sesame, wheat. May contain peanuts, soy, sulphites, mustard.;Snowcrest Blueberries;BC, VEG;placeholder;
-Overnight Oats;Milk / Oats / Chia Seed / Yogurt / Vanilla / Seasonal Fruit;Milk, wheat.;Fresh Start Pineapple,  Fresh Start Honeydew, Snowcrest Blueberries;BC, VEG;placeholder;
-Chia Pudding;Milk / Chia Seeds / Honey / Seasonal Fruit;Milk.;Fresh Start Pineapple,  Fresh Start Honeydew, Snowcrest Blueberries;BC, VEG, GF;placeholder;
-Portioned Eggs (2);Hard boiled eggs;Eggs.;NA;VEG, DF, GF;placeholder;
+Protein Pack;Salami / Cheddar Cheese / Dates / Melba Toast / Chocolate;Milk, sulphites, mustard.  May contain peanuts, treenuts, soy.;Nesvog Meats Salami, Castle Cheese Cheddar;BC;Protein_Pack;
+Vegetarian Protein Pack; Cucumber / Carrot / Celery / Tomato / Eggs / Cheddar Cheese / Nuts;Milk, eggs, treenuts.;Fresh Start Cucumber, Castle Cheese Cheddar;BC, VEG;Vegetarian_Protein_Pack;
+Seasonal Cut Fruit;Seasonal Fruit;No known priority allergens.;Fresh Start Pineapple,  Fresh Start Honeydew;BC, VEG, VGN, GF, DF;Seasonal_Cut_Fruit;
+Falafel & Dip;Falafel / Cucumber / Tzatziki;Milk, wheat.;Fresh Start Cucumber, Zorba's Tzatziki;BC, VEG;Falafel_&_Dip;
+Chicken Gyoza;Chicken / Cabbage / Spring Onion / Sugar / Sesame Oil / Gyoza Sauce;Sesame, soy, wheat.;NA;DF;Chicken_Gyoza;
+Shimp Gyoza;Shrimp / Cabbage / Chives / Spring Onion / Wheat Flour / Ginger / Garlic / Soy Sauce / Gyoza Sauce;Crustacean, sesame, soy, wheat, mustard.;NA;NA;Shrimp_Gyoza;
+Packaged Curry Meal Small;Item will vary daily - find information in the cafeteria.;Item will vary daily - find information in the cafeteria.;NA;NA;placeholder;
+Yogurt Parfait;Yogurt / Granola / Seasonal Fruit;Milk, sesame, wheat. May contain peanuts, soy, sulphites, mustard.;Snowcrest Blueberries;BC, VEG;Yogurt_Parfait;
+Overnight Oats;Milk / Oats / Chia Seed / Yogurt / Vanilla / Seasonal Fruit;Milk, wheat.;Fresh Start Pineapple,  Fresh Start Honeydew, Snowcrest Blueberries;BC, VEG;Overnight_Oats;
+Chia Pudding;Milk / Chia Seeds / Honey / Seasonal Fruit;Milk.;Fresh Start Pineapple,  Fresh Start Honeydew, Snowcrest Blueberries;BC, VEG, GF;Chia_Pudding;
+Portioned Eggs (2);Hard boiled eggs;Eggs.;NA;VEG, DF, GF;Boiled_Eggs;

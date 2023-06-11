@@ -1,4 +1,11 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;LeaveEmpty
-Club Sandwich;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;Island City Bread;GF, BC;placeholder;
-Turkey Swiss Wrap;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;Wheat.;Egg, Sausage;GF,VEG, BC;placeholder;
-Falafel Wrap;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;Wheat.;Zorba's Tzatziki, BCfresh Tomatoes;VGN, BC, GF, DF;placeholder;
+Club Sandwich;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, eggs, mustard.;Island City Bread;GF, BC;placeholder;
+Turkey Wrap;Turkey / Lettuce / Tomato /  Red Onion / Spicy Mayo / Sundried Tomato Tortilla;Wheat, gluten, milk, eggs, mustard, fish. Sriracha contains anchovy.;Fresh Start Tomato;BC;Turkey_Wrap;
+Falafel Wrap;Falafel / Red Onion / Cucumber / Tomato / Feta / Tzatziki / Lettuce / Sundried Tomato Tortilla;Wheat, milk. ;Zorba's Tzatziki, Fresh Start Cucumber, Fresh Start Tomato;BC, VEG, GFO;placeholder;
+Ham and Swiss; Shaved Black Forest Ham / Swiss Cheese / Dijon Aioli / Mixed Greens / Tomato;Wheat, milk, eggs, sulphites.;Castle Cheese Swiss, Fresh Start Tomato;BC;placeholder;
+Hot Philly;Sliced Beef / Roasted Mushrooms / Green Pepper /  Onion / Swiss Cheese / Garlic Aioli;Wheat, milk, eggs, sulphites.;Castle Cheese Swiss;BC;placeholder;
+Chicken Caesar Wrap;Crispy Chicken / Bacon / Romaine / Caesar Dressing /  Parmesan / Sundried Tomato Tortilla;Wheat, gluten, milk, eggs, soy, mustard, fish. Caesar contains anchovy.;Castle Cheese Parmesan, Fresh Start Tomato;BC;Chicken_Caesar_Wrap;
+Greek Wrap;Pita /  Romaine / Tomato / Red Onion / Tzatziki / Choice of Chicken or Falafel or Lamb & Beef;Wheat, milk. ;Zorba's Tzatziki, Fresh Start Romaine,  Fresh Start Tomato;BC;placeholder;
+BLT;Bacon / Romaine / Tomato / Mayo;Wheat, eggs, mustard.;Fresh Start Romaine,  Fresh Start Tomato;BC;placeholder;
+Chicken Bacon Ranch;Roasted Chicken / Bacon / Romaine / Tomato / Ranch;Wheat, milk, eggs.;Fresh Start Romaine,  Fresh Start Tomato;BC;placeholder;
+Gluten Free Bread Option;Water /  Potato Starch / Rice Flour / Oil / Eggs / Sugar / Salt / Yeast;Eggs.;NA;GF;placeholder;

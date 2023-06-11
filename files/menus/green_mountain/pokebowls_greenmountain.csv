@@ -1,6 +1,6 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;nutritionLabel;Column1
-Aloha;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;placeholder;
-Coastal;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;placeholder;
-Tuna;Smoked salmon / yellowfin tuna / cucumber / carrot / pineapple / guacamole / spicy mayo / green onion / unagi sauce / sesame seeds;No known priority allergens;Potato;VGN, GF, DF;placeholder;
-Chicken;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;placeholder;
-Veggie;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;No known priority allergens;Egg, Sausage;GF,VEG;placeholder;
+Aloha;Smoked Salmon / Yellowfin Tuna / Cucumber / Carrot / Pineapple / Guacamole / Spicy Mayo / Green Onion / Unagi Sauce / Sesame Seeds;Wheat, sulphites, egg, mustard, soy, fish.;Fresh Start Cucumber, Nanuk Smoked Salmon;BC;Cobb_Salad;
+Coastal;Smoked Salmon / Guacamole / Purple Cabbage / Edamame / Carrot / Mango / Green Onion / Wasabi Mayo / Unagi Sauce / Sesame Seeds;Wheat, sulphites, egg, mustard, soy, fish.;Nanuk Smoked Salmon;BC;Cobb_Salad;
+Tuna;Yellowfin Tuna / Mango /Edamame / Cucumber / Guacamole / Carrot / Green Onion / Sesame Ginger Miso Dressing / Sesame Seeds ;Wheat, sulphites, egg, mustard, soy, fish.;Fresh Start Cucumber;BC;Cobb_Salad;
+Chicken;Roasted Chicken / Pineapple / Cucumber / Guacamole / Carrot / Cabbage / Green Onion / Sesame Ginger Miso Dressing / Spicy Mayo / Sesame Seeds;Wheat, sulphites, egg, mustard, soy.;Fresh Start Cucumber;BC;Caesar_Salad;
+Veggie;Tofu / Cucumber / Cabbage / Edamame / Guacamole / Carrot / Mango /Green Onion / Sesame Ginger Miso Dressing / Wasabi Mayo / Sesame Seeds;Wheat, sulphites, egg, mustard, soy.;Fresh Start Cucumber;BC, VEG;Cobb_Salad;

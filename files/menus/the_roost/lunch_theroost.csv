@@ -1,10 +1,10 @@
 ﻿ItemName;Ingredients;Allergens;LocalIngredients;Diet;Nutrition Label;LeaveEmpty
-Classic Burger;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;Wheat, sulphites, egg.;NA;GF;placeholder;
-Loaded Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;placeholder;Tomato, Lettuce;GFO, BC;placeholder;
-Veggie Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;placeholder;Egg, Sausage;GF,VEG;placeholder;
-Crispy Chicken Burger;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;placeholder;Samosas;VGN, GF, DF;placeholder;
-Pulled Pork Burger;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;placeholder;NA;GF;placeholder;
-Chicken Strips;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;placeholder;NA;GF,VGN;placeholder;
-Fish & Chip Platter;Turkey / Bacon / Cheddar Cheese / Lettuce / Tomato / Garlic Aioli;placeholder;Egg, Sausage;GF,VEG;placeholder;
-Chef's Salad;Turkey / Swiss Cheese / Roasted Onion / Tomato / Cucumber / Mixed Greens / Spicy Mayo;placeholder;NA;GF;placeholder;
-Poutine;Falafel / Feta / Red Onion / Cucumber / Mixed Greens / Tomato / Tzatziki;placeholder;Cheese Curds;GF,VGN;placeholder;
+Classic Burger;Sesame Burger Bun / Beef Patty / Lettuce / Tomato /  Red Onion;Soy, sesame, wheat, milk, eggs, gluten. Bun made in a facility that also processes: crustacean, shellfish, fish, sulphites, eggs, mustard. ;Island City Bun, Fresh Start Tomato;BC;Beef_Burger;
+Loaded Burger;Sesame Bun / Beef Patty / Pickles / Cheddar Cheese / Red Onion;Soy, sesame, wheat, milk, eggs, gluten, mustard. Bun made in a facility that also processes: crustacean, shellfish, fish, sulphites. ;Island City Bun, Castle Cheese Cheddar;BC;Beef_Burger;
+Veggie Burger;Sesame Bun / Spicy Black Bean Patty / Pickles / Cheddar Cheese / Red Onion;Soy, sesame, wheat, milk, eggs, gluten, mustard. Bun made in a facility that also processes: crustacean, shellfish, fish, sulphites. ;Island City Bun, Castle Cheese Cheddar;BC,VEG;Veggie_Burger;
+Crispy Chicken Burger;Sesame Bun / Crispy Chicken / Lettuce / Tomato / Mayo (Add Buffalo Hot Sauce on Request!);Soy, sesame, wheat, milk, eggs, gluten, mustard. Bun made in a facility that also processes: crustacean, shellfish, fish, sulphites. ;Island City Bun, Fresh Start Tomato;BC;Beef_Burger;
+Pulled Pork Burger;Sesame Bun / Seasoned Pulled Pork / Coleslaw;Soy, sesame, wheat, milk, eggs, gluten, mustard. Bun made in a facility that also processes: crustacean, shellfish, fish, sulphites. ;NA;GF;Beef_Burger;
+Chicken Strips;Chicken Breast Fillets /Seasoned Breading / Your Choice Dipping Sauce;Soy, sesame, wheat, milk, eggs, gluten. Bun made in a facility that also processes: crustacean, shellfish, fish, sulphites, eggs, mustard. ;NA;NA;Chicken_Strips;
+Fish & Chip Platter;Ocean Wise Battered Cod / Golden Crispy Fries / Coleslaw / Lemon;Wheat, gluten, fish, mustard.;NA;DF;Tuna_Salad;
+Chef's Salad;Item will vary daily - find information in the cafeteria.;Item will vary daily - find information in the cafeteria.;NA;NA;placeholder;
+Poutine; Golden Crispy Fries / Vegetarian Brown Gravy / Cheese Curds;Wheat, milk, soy.;NA;VEG;Poutine;
