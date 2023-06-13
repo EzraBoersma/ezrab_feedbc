@@ -14023,7 +14023,7 @@ iframe {
   }
 
   .row>* {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     /*TODO: avoid creating content scroll on mobile */
   }
 
@@ -14049,7 +14049,7 @@ iframe {
   }
 
   #dietary-guide {
-    max-height: 15vh;
+    max-height: 22vh;
     overflow-y: scroll !important;
   }
 
@@ -14436,7 +14436,7 @@ html {
   }
 
   #mainpanel {
-    margin-top: 7vh !important;
+    margin-top: 4vh !important;
 
   }
 
