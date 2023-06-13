@@ -14035,6 +14035,10 @@ iframe {
 
   }
 
+  .p-4 {
+    padding: 0.8rem !important;
+  }
+
   .nav-link {
     font-size: calc(1.375rem + 0.5vw);
 
