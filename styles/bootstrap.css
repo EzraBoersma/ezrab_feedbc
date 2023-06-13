@@ -13730,7 +13730,7 @@ th {
 }
 
 #menuaccordion {
-  max-height: 55vh;
+  max-height: 65vh;
   overflow-y: scroll;
 }
 
@@ -14008,55 +14008,7 @@ iframe {
 
 
 
-/* Small devices */
-@media (max-width: 766px) {
-  .nav-link {
-    font-size: calc(1.2rem + 0.5vw);
 
-  }
-
-  #btn_body {
-    padding-bottom: 0rem !important;
-  }
-
-  .localfood_column {
-    padding-top: 0rem !important;
-    margin-top: 0rem !important;
-  }
-
-  #mapbanner {
-    font-size: calc(.75rem + 0.2vw) !important;
-  }
-
-  .alert-heading,
-  .container>h3 {
-    font-size: calc(.75rem + 0.3vw) !important;
-  }
-
-  .alert-subheading {
-    font-size: calc(.5rem + 0.2vw) !important;
-
-  }
-
-  #mainpanel {
-    margin-top: 11vh !important;
-
-  }
-
-  .jumbotron .container {
-
-    padding: 2% !important;
-  }
-
-  .col-md-6 img {
-    width: 100%;
-    height: auto;
-  }
-
-
-
-
-}
 
 
 
@@ -14446,4 +14398,59 @@ iframe {
 
 html {
   scrollbar-width: thin !important;
+}
+
+
+/* Small devices */
+@media (max-width: 766px) {
+  .nav-link {
+    font-size: calc(1.2rem + 0.5vw);
+
+  }
+
+  #btn_body {
+    padding-bottom: 0rem !important;
+  }
+
+  .localfood_column {
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+  }
+
+  #mapbanner {
+    font-size: calc(.75rem + 0.2vw) !important;
+  }
+
+  .alert-heading,
+  .container>h3 {
+    font-size: calc(.75rem + 0.3vw) !important;
+  }
+
+  .alert-subheading {
+    font-size: calc(.5rem + 0.2vw) !important;
+
+  }
+
+  #mainpanel {
+    margin-top: 7vh !important;
+
+  }
+
+  .w-12 {
+    width: calc(5rem + 0.5vw) !important;
+  }
+
+  .jumbotron .container {
+
+    padding: 2% !important;
+  }
+
+  .col-md-6 img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
 }
